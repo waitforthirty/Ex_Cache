@@ -1,0 +1,1147 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+Options:	
+Date:		Mon May 15 20:48:15 2017
+Host:		Orgrimmar (x86_64 w/Linux 2.6.32-504.3.3.el6.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E7-8893 v2 @ 3.40GHz 38400KB)
+OS:		CentOS release 6.6 (Final)
+
+License:
+		invs	Innovus Implementation System	15.2	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> set init_gnd_net gnd!
+<CMD> set init_lef_file ../DirectMap/Synopsys_Libraries/vtvt_tsmc180_lef/vtvt_tsmc180.lef
+<CMD> set init_verilog CacheController.syn.v
+<CMD> set init_mmmc_file ../DirectMap/innovus/Default.view
+<CMD> set init_pwr_net vdd!
+<CMD> init_design
+
+Loading LEF file ../DirectMap/Synopsys_Libraries/vtvt_tsmc180_lef/vtvt_tsmc180.lef ...
+**WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+so you are unable to create rectilinear partition in a hierarchical flow.
+Set DBUPerIGU to M2 pitch 810.
+
+viaInitial starts at Mon May 15 20:51:37 2017
+viaInitial ends at Mon May 15 20:51:37 2017
+Loading view definition file from ../DirectMap/innovus/Default.view
+Reading vtvt_tsmc180 timing library '/home/lgy/Desktop/Ex_cache/DirectMap/Synopsys_Libraries/vtvt_tsmc180.lib' ...
+Read 83 cells in library 'vtvt_tsmc180' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.38min, fe_real=3.38min, fe_mem=499.4M) ***
+*** Begin netlist parsing (mem=499.4M) ***
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xor2_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xor2_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xor2_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xor2_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xnor2_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xnor2_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xnor2_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xnor2_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or4_4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or4_4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or4_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or4_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or4_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or4_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or3_4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or3_4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or3_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or3_2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or3_1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or3_1' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 83 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'CacheController.syn.v'
+
+*** Memory Usage v#1 (Current mem = 504.441M, initial mem = 164.594M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=504.4M) ***
+Top level cell is CacheController.
+Hooked 83 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell CacheController ...
+*** Netlist is unique.
+** info: there are 85 modules.
+** info: there are 11064 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 530.945M, initial mem = 164.594M) ***
+Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.07 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.03 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: constraint_rule
+    RC-Corner Name        : default_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc' ...
+Current (total cpu=0:00:23.0, real=0:03:23, peak res=219.3M, current mem=638.5M)
+**WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc, Line 309).
+
+INFO (CTE): Reading of timing constraints file /home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc completed, with 1 WARNING
+WARNING (CTE-25): Line: 10 of File /home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc : Skipped unsupported command: set_max_area
+
+
+WARNING (CTE-25): Line: 9 of File /home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=235.2M, current mem=654.7M)
+Current (total cpu=0:00:23.0, real=0:03:23, peak res=235.2M, current mem=654.7M)
+Total number of combinational cells: 59
+Total number of sequential cells: 20
+Total number of tristate cells: 4
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: buf_2 buf_1 buf_4 cd_8
+Total number of usable buffers: 4
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: inv_2 inv_1 inv_4
+Total number of usable inverters: 3
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: cd_12 cd_16
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+WARNING   IMPEXT-2766          6  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          6  The via resistance between layers %s and...
+WARNING   IMPVL-159          166  Pin '%s' of cell '%s' is defined in LEF ...
+*** Message Summary: 179 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.988043478261 0.699982 0.0 0.0 0.0 0.0
+Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.987430167598 0.699548 0.0 0.0 0.0 0.0
+Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.967519004838 0.699219 10.0 10 10 10
+Snap core to left to manufacture grid: 9.9900.
+Snap core to bottom to manufacture grid: 9.9900.
+Snap core to right to manufacture grid: 9.9900.
+Snap core to top to manufacture grid: 9.9900.
+Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.967519004838 0.699219 10.53 10.53 10.53 10.53
+Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> clearGlobalNets
+<CMD> globalNetConnect vdd! -type pgpin -pin vdd! -inst * -module {}
+<CMD> globalNetConnect gnd! -type pgpin -pin gnd! -inst * -module {}
+Warning: net addr_mem[1] is not connected to global special net.
+Warning: net addr_mem[0] is not connected to global special net.
+Warning: term rb of inst mem_done_reg is not connect to global special net.
+Warning: term rb of inst state_reg[0] is not connect to global special net.
+Warning: term rb of inst rd_temp_reg is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[0] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[1] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[2] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[3] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[4] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[5] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[6] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[7] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[8] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[9] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[10] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[11] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[12] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[13] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[14] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[15] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[16] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[17] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[18] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[19] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[20] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[21] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[22] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[23] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[24] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[25] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[26] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[27] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[28] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[29] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[30] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[31] is not connect to global special net.
+Warning: term rb of inst busy_reg is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[0] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[1] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[2] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[3] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[4] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[5] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[6] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[7] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[8] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[9] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[10] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[11] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[12] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[13] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[14] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[15] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[16] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[17] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[18] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[19] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[20] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[21] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[22] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[23] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[24] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[25] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[26] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[27] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[28] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[29] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[30] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[31] is not connect to global special net.
+<CMD> clearGlobalNets
+<CMD> globalNetConnect vdd! -type pgpin -pin vdd! -inst * -module {}
+<CMD> globalNetConnect gnd! -type pgpin -pin gnd! -inst * -module {}
+Warning: net addr_mem[1] is not connected to global special net.
+Warning: net addr_mem[0] is not connected to global special net.
+Warning: term rb of inst mem_done_reg is not connect to global special net.
+Warning: term rb of inst state_reg[0] is not connect to global special net.
+Warning: term rb of inst rd_temp_reg is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[0] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[1] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[2] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[3] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[4] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[5] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[6] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[7] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[8] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[9] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[10] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[11] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[12] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[13] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[14] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[15] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[16] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[17] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[18] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[19] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[20] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[21] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[22] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[23] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[24] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[25] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[26] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[27] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[28] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[29] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[30] is not connect to global special net.
+Warning: term rb of inst addr_resp_tri_enable_reg[31] is not connect to global special net.
+Warning: term rb of inst busy_reg is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[0] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[1] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[2] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[3] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[4] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[5] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[6] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[7] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[8] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[9] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[10] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[11] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[12] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[13] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[14] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[15] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[16] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[17] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[18] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[19] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[20] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[21] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[22] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[23] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[24] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[25] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[26] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[27] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[28] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[29] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[30] is not connect to global special net.
+Warning: term rb of inst data_rd_tri_enable_reg[31] is not connect to global special net.
+<CMD> set sprCreateIeRingNets {}
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingWidth 1.0
+<CMD> set sprCreateIeRingSpacing 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer metal6 -type core_rings -jog_distance 0.81 -threshold 0.81 -nets {gnd! vdd!} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 0.45 -spacing 0.45 -offset 0.81
+
+The power planner created 8 wires.
+<CMD_INTERNAL> editPushUndo
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 910.5M) ***
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> getCTSMode -engine -quiet
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer metal6 -type core_rings -jog_distance 0.81 -threshold 0.81 -nets {gnd! vdd!} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 0.45 -spacing 0.45 -offset 0.81
+
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 911.5M) ***
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer metal6 -type core_rings -jog_distance 0.81 -threshold 0.81 -nets {gnd! vdd!} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 0.45 -spacing 0.45 -offset 0.81
+
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 911.5M) ***
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+*** Begin SPECIAL ROUTE on Mon May 15 21:06:46 2017 ***
+SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "gnd! vdd!"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1507.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 0 overlap layer
+Read in 84 macros, 18 used
+Read in 18 components
+  18 core components: 18 unplaced, 0 placed, 0 fixed
+Read in 297 logical pins
+Read in 297 nets
+Read in 2 special nets, 2 routed
+Read in 36 terminals
+2 nets selected.
+
+Begin power routing ...
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 202
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 101
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1513.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 12 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Mon May 15 21:06:46 2017
+The viaGen is rebuilding shadow vias for net gnd!.
+sroute post-processing ends at Mon May 15 21:06:46 2017
+
+sroute post-processing starts at Mon May 15 21:06:46 2017
+The viaGen is rebuilding shadow vias for net vdd!.
+sroute post-processing ends at Mon May 15 21:06:46 2017
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 6.30 megs
+sroute: Total Peak Memory used = 918.77 megs
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+*** Begin SPECIAL ROUTE on Mon May 15 21:06:47 2017 ***
+SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "gnd! vdd!"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1513.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 0 overlap layer
+Read in 84 macros, 18 used
+Read in 18 components
+  18 core components: 18 unplaced, 0 placed, 0 fixed
+Read in 297 logical pins
+Read in 297 nets
+Read in 2 special nets, 2 routed
+Read in 36 terminals
+2 nets selected.
+
+Begin power routing ...
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1517.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 14 via definition ...
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 0.25 megs
+sroute: Total Peak Memory used = 919.02 megs
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 0 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+*** Begin SPECIAL ROUTE on Mon May 15 21:07:51 2017 ***
+SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "gnd! vdd!"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "sameLayer"
+srouteNoLayerChangeRoute set to true
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1517.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 0 overlap layer
+Read in 84 macros, 18 used
+Read in 18 components
+  18 core components: 18 unplaced, 0 placed, 0 fixed
+Read in 297 logical pins
+Read in 297 nets
+Read in 2 special nets, 2 routed
+Read in 36 terminals
+2 nets selected.
+
+Begin power routing ...
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 14 via definition ...
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 1.00 megs
+sroute: Total Peak Memory used = 920.02 megs
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+*** Begin SPECIAL ROUTE on Mon May 15 21:08:02 2017 ***
+SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "gnd! vdd!"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 0 overlap layer
+Read in 84 macros, 18 used
+Read in 18 components
+  18 core components: 18 unplaced, 0 placed, 0 fixed
+Read in 297 logical pins
+Read in 297 nets
+Read in 2 special nets, 2 routed
+Read in 36 terminals
+2 nets selected.
+
+Begin power routing ...
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 14 via definition ...
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = -0.12 megs
+sroute: Total Peak Memory used = 919.89 megs
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -deleteExistingRoutes -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+*** Begin SPECIAL ROUTE on Mon May 15 21:08:12 2017 ***
+SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "gnd! vdd!"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 0 overlap layer
+Read in 84 macros, 18 used
+Read in 18 components
+  18 core components: 18 unplaced, 0 placed, 0 fixed
+Read in 297 logical pins
+Read in 297 nets
+Read in 2 special nets, 2 routed
+Read in 36 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-386):	204 wires and 0 via of shape COREWIRE of net vdd! removed
+**WARN: (IMPSR-386):	51 wires and 0 via of shape FOLLOWPIN of net vdd! removed
+**WARN: (IMPSR-386):	200 wires and 0 via of shape COREWIRE of net gnd! removed
+**WARN: (IMPSR-386):	50 wires and 0 via of shape FOLLOWPIN of net gnd! removed
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+  Number of Core ports routed: 202
+  Number of Followpin connections: 101
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 16 via definition ...
+
+sroute post-processing starts at Mon May 15 21:08:12 2017
+The viaGen is rebuilding shadow vias for net gnd!.
+sroute post-processing ends at Mon May 15 21:08:12 2017
+
+sroute post-processing starts at Mon May 15 21:08:12 2017
+The viaGen is rebuilding shadow vias for net vdd!.
+sroute post-processing ends at Mon May 15 21:08:12 2017
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = -0.12 megs
+sroute: Total Peak Memory used = 919.77 megs
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+*** Begin SPECIAL ROUTE on Mon May 15 21:08:18 2017 ***
+SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "gnd! vdd!"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 0 overlap layer
+Read in 84 macros, 18 used
+Read in 18 components
+  18 core components: 18 unplaced, 0 placed, 0 fixed
+Read in 297 logical pins
+Read in 297 nets
+Read in 2 special nets, 2 routed
+Read in 36 terminals
+2 nets selected.
+
+Begin power routing ...
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1519.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 14 via definition ...
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 1.00 megs
+sroute: Total Peak Memory used = 920.77 megs
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+*** Begin SPECIAL ROUTE on Mon May 15 21:08:19 2017 ***
+SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "gnd! vdd!"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1519.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 0 overlap layer
+Read in 84 macros, 18 used
+Read in 18 components
+  18 core components: 18 unplaced, 0 placed, 0 fixed
+Read in 297 logical pins
+Read in 297 nets
+Read in 2 special nets, 2 routed
+Read in 36 terminals
+2 nets selected.
+
+Begin power routing ...
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+**WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+Bad via found: M1_N
+Bad via found: M1_P
+Bad via found: M1_POLY
+Bad via found: NTAP
+**WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1519.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 14 via definition ...
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = -0.25 megs
+sroute: Total Peak Memory used = 920.52 megs
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign
+*** Starting placeDesign default flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.18402 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: CacheController
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+siFlow : Timing analysis mode is single, using late cdB files
+End delay calculation. (MEM=1089.22 CPU=0:00:01.1 REAL=0:00:02.0)
+*** CDM Built up (cpu=0:00:01.4  real=0:00:02.0  mem= 1089.2M) ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Updating netlist
+
+*summary: 188 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.3) ***
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Deleted 0 physical inst  (cell - / prefix -).
+*** Starting "NanoPlace(TM) placement v#2 (mem=1081.2M)" ...
+**WARN: (IMPTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man IMPTS-403' for more detail.
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.0 mem=1081.2M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.0 mem=1081.2M) ***
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (IMPSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored.
+Define the scan chains before using this option.
+Type 'man IMPSP-9042' for more detail.
+#std cell=10877 (0 fixed + 10877 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=10978 #term=37776 #term/net=3.44, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=295
+stdCell: 10877 single + 0 double + 0 multi
+Total standard cell length = 81.2106 (mm), area = 0.9209 (mm^2)
+Estimated cell power/ground rail width = 2.303 um
+Average module density = 0.693.
+Density for the design = 0.693.
+       = stdcell_area 100260 sites (920928 um^2) / alloc_area 144700 sites (1329127 um^2).
+Pin Density = 0.2611.
+            = total # of pins 37776 / total area 144700.
+=== lastAutoLevel = 8 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 3.579e-08 (1.42e-08 2.16e-08)
+              Est.  stn bbox = 3.695e-08 (1.47e-08 2.22e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1099.2M
+Iteration  2: Total net bbox = 3.579e-08 (1.42e-08 2.16e-08)
+              Est.  stn bbox = 3.695e-08 (1.47e-08 2.22e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1099.2M
+Iteration  3: Total net bbox = 9.490e+02 (5.11e+02 4.38e+02)
+              Est.  stn bbox = 1.411e+03 (7.66e+02 6.44e+02)
+              cpu = 0:00:00.9 real = 0:00:00.0 mem = 1099.2M
+Iteration  4: Total net bbox = 3.593e+05 (2.08e+05 1.51e+05)
+              Est.  stn bbox = 5.242e+05 (2.88e+05 2.37e+05)
+              cpu = 0:00:03.1 real = 0:00:03.0 mem = 1099.2M
+Iteration  5: Total net bbox = 3.893e+05 (2.18e+05 1.72e+05)
+              Est.  stn bbox = 6.139e+05 (3.22e+05 2.92e+05)
+              cpu = 0:00:03.2 real = 0:00:04.0 mem = 1099.2M
+Iteration  6: Total net bbox = 4.314e+05 (2.25e+05 2.07e+05)
+              Est.  stn bbox = 6.753e+05 (3.36e+05 3.40e+05)
+              cpu = 0:00:04.7 real = 0:00:04.0 mem = 1129.2M
+Iteration  7: Total net bbox = 5.104e+05 (2.83e+05 2.28e+05)
+              Est.  stn bbox = 7.550e+05 (3.95e+05 3.60e+05)
+              cpu = 0:00:01.5 real = 0:00:02.0 mem = 1129.2M
+Iteration  8: Total net bbox = 5.104e+05 (2.83e+05 2.28e+05)
+              Est.  stn bbox = 7.550e+05 (3.95e+05 3.60e+05)
+              cpu = 0:00:02.1 real = 0:00:02.0 mem = 1129.2M
+Iteration  9: Total net bbox = 5.183e+05 (2.80e+05 2.38e+05)
+              Est.  stn bbox = 7.772e+05 (4.02e+05 3.75e+05)
+              cpu = 0:00:05.1 real = 0:00:05.0 mem = 1129.2M
+Iteration 10: Total net bbox = 5.183e+05 (2.80e+05 2.38e+05)
+              Est.  stn bbox = 7.772e+05 (4.02e+05 3.75e+05)
+              cpu = 0:00:02.1 real = 0:00:02.0 mem = 1129.2M
+Iteration 11: Total net bbox = 5.690e+05 (3.01e+05 2.68e+05)
+              Est.  stn bbox = 8.253e+05 (4.22e+05 4.03e+05)
+              cpu = 0:00:09.8 real = 0:00:10.0 mem = 1129.2M
+Iteration 12: Total net bbox = 5.690e+05 (3.01e+05 2.68e+05)
+              Est.  stn bbox = 8.253e+05 (4.22e+05 4.03e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1129.2M
+Iteration 13: Total net bbox = 5.690e+05 (3.01e+05 2.68e+05)
+              Est.  stn bbox = 8.253e+05 (4.22e+05 4.03e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1129.2M
+*** cost = 5.690e+05 (3.01e+05 2.68e+05) (cpu for global=0:00:33.0) real=0:00:34.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:28.1 real: 0:00:28.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:01:56 mem=1069.3M) ***
+Total net length = 5.699e+05 (3.012e+05 2.686e+05) (ext = 5.330e+04)
+Density distribution unevenness ratio = 2.780%
+Move report: Detail placement moves 10877 insts, mean move: 5.61 um, max move: 48.50 um
+	Max move on inst (U7968): (791.52, 812.38) --> (836.73, 815.67)
+	Runtime: CPU: 0:00:01.2 REAL: 0:00:02.0 MEM: 1070.8MB
+Summary Report:
+Instances move: 10877 (out of 10877 movable)
+Mean displacement: 5.61 um
+Max displacement: 48.50 um (Instance: U7968) (791.524, 812.381) -> (836.73, 815.67)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: inv_1
+Total net length = 5.579e+05 (2.853e+05 2.726e+05) (ext = 5.340e+04)
+Runtime: CPU: 0:00:01.2 REAL: 0:00:02.0 MEM: 1070.8MB
+*** Finished refinePlace (0:01:57 mem=1070.8M) ***
+Total net length = 5.553e+05 (2.834e+05 2.719e+05) (ext = 5.353e+04)
+*** End of Placement (cpu=0:00:35.5, real=0:00:37.0, mem=1070.8M) ***
+default core: bins with density >  0.75 = 7.27 % ( 8 / 110 )
+Density distribution unevenness ratio = 2.783%
+*** Free Virtual Timing Model ...(mem=1070.8M)
+Starting IO pin assignment...
+The design is not routed. Using flight-line based method for pin assignment.
+Completed IO pin assignment.
+Starting congestion repair ...
+[NR-eagl] buildTerm2TermWires    : 1
+[NR-eagl] doTrackAssignment      : 1
+[NR-eagl] numThreads             : 1
+[NR-eagl] honorMsvRouteConstraint: false
+[NR-eagl] honorClockSpecNDR      : 0
+[NR-eagl] minRouteLayer          : 2
+[NR-eagl] maxRouteLayer          : 2147483647
+[NR-eagl] numTracksPerClockWire  : 0
+[NR-eagl] Layer1 has no routable track
+[NR-eagl] Layer2 has single uniform track structure
+[NR-eagl] Layer3 has single uniform track structure
+[NR-eagl] Layer4 has single uniform track structure
+[NR-eagl] Layer5 has single uniform track structure
+[NR-eagl] Layer6 has single uniform track structure
+[NR-eagl] numViaLayers=5
+[NR-eagl] numRoutingBlks=0 numInstBlks=8977 numPGBlocks=214 numBumpBlks=0 numBoundaryFakeBlks=0
+[NR-eagl] numPreroutedNet = 0  numPreroutedWires = 0
+[NR-eagl] Read numTotalNets=10978  numIgnoredNets=0
+[NR-eagl] There are 1 clock nets ( 0 with NDR ).
+[NR-eagl] EstWL : 70361
+
+[NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[NR-eagl] 
+[NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[NR-eagl] 
+[NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+
+[NR-eagl] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[NR-eagl] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+describeCongestion: hCong = 0.00 vCong = 0.00
+Skipped repairing congestion.
+[NR-eagl] Layer1(metal1)(F) length: 0.000000e+00um, number of vias: 37481
+[NR-eagl] Layer2(metal2)(V) length: 1.821334e+05um, number of vias: 51248
+[NR-eagl] Layer3(metal3)(H) length: 4.359153e+05um, number of vias: 11312
+[NR-eagl] Layer4(metal4)(V) length: 2.217942e+05um, number of vias: 130
+[NR-eagl] Layer5(metal5)(H) length: 6.530220e+03um, number of vias: 9
+[NR-eagl] Layer6(metal6)(V) length: 2.178900e+02um, number of vias: 0
+[NR-eagl] Total length: 8.465909e+05um, number of vias: 100180
+End of congRepair (cpu=0:00:00.3, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:38, real = 0: 0:39, mem = 1074.9M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPTS-403            1  Delay calculation was forced to extrapol...
+WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPSP-9042           1  Scan chains were not defined, -ignoreSca...
+*** Message Summary: 4 warning(s), 0 error(s)
+
+<CMD> selectInst {cache_data_A_reg[1][68]}
+<CMD> deselectAll
+
+*** Memory Usage v#1 (Current mem = 1076.949M, initial mem = 164.594M) ***
+*** Message Summary: 230 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:03, real=0:23:03, mem=1076.9M) ---

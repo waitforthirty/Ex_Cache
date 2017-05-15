@@ -1,0 +1,1378 @@
+[05/15 20:48:15     0s] 
+[05/15 20:48:15     0s] Cadence Innovus(TM) Implementation System.
+[05/15 20:48:15     0s] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/15 20:48:15     0s] 
+[05/15 20:48:15     0s] Version:	v15.20-p005_1, built Wed Nov 11 11:16:39 PST 2015
+[05/15 20:48:15     0s] Options:	
+[05/15 20:48:15     0s] Date:		Mon May 15 20:48:15 2017
+[05/15 20:48:15     0s] Host:		Orgrimmar (x86_64 w/Linux 2.6.32-504.3.3.el6.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E7-8893 v2 @ 3.40GHz 38400KB)
+[05/15 20:48:15     0s] OS:		CentOS release 6.6 (Final)
+[05/15 20:48:15     0s] 
+[05/15 20:48:15     0s] License:
+[05/15 20:48:15     0s] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[05/15 20:48:15     0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/15 20:48:21     5s] @(#)CDS: Innovus v15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+[05/15 20:48:21     5s] @(#)CDS: NanoRoute 15.20-p005_1 NR151028-1715/15_20-UB (database version 2.30, 298.6.1) {superthreading v1.26}
+[05/15 20:48:21     5s] @(#)CDS: AAE 15.20-p002 (64bit) 11/11/2015 (Linux 2.6.18-194.el5)
+[05/15 20:48:21     5s] @(#)CDS: CTE 15.20-p001_1 () Oct 29 2015 01:50:39 ( )
+[05/15 20:48:21     5s] @(#)CDS: SYNTECH 15.20-b002_1 () Oct 20 2015 02:35:29 ( )
+[05/15 20:48:21     5s] @(#)CDS: CPE v15.20-p002
+[05/15 20:48:21     5s] @(#)CDS: IQRC/TQRC 15.1.2-s269 (64bit) Mon Aug 24 18:22:18 PDT 2015 (Linux 2.6.18-194.el5)
+[05/15 20:48:21     5s] @(#)CDS: OA 22.50-p028 Thu Jul 23 14:59:57 2015
+[05/15 20:48:21     5s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[05/15 20:48:21     5s] @(#)CDS: RCDB 11.6
+[05/15 20:48:21     5s] --- Running on Orgrimmar (x86_64 w/Linux 2.6.32-504.3.3.el6.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU E7-8893 v2 @ 3.40GHz 38400KB) ---
+[05/15 20:48:21     5s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_18402_Orgrimmar_lgy_gnEFUo.
+
+[05/15 20:48:21     6s] 
+[05/15 20:48:21     6s] **INFO:  MMMC transition support version v31-84 
+[05/15 20:48:21     6s] 
+[05/15 20:48:21     6s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/15 20:48:21     6s] <CMD> suppressMessage ENCEXT-2799
+[05/15 20:48:21     6s] <CMD> getDrawView
+[05/15 20:48:21     6s] <CMD> loadWorkspace -name Physical
+[05/15 20:48:21     6s] <CMD> win
+[05/15 20:51:37    22s] <CMD> set init_gnd_net gnd!
+[05/15 20:51:37    22s] <CMD> set init_lef_file ../DirectMap/Synopsys_Libraries/vtvt_tsmc180_lef/vtvt_tsmc180.lef
+[05/15 20:51:37    22s] <CMD> set init_verilog CacheController.syn.v
+[05/15 20:51:37    22s] <CMD> set init_mmmc_file ../DirectMap/innovus/Default.view
+[05/15 20:51:37    22s] <CMD> set init_pwr_net vdd!
+[05/15 20:51:37    22s] <CMD> init_design
+[05/15 20:51:37    22s] 
+[05/15 20:51:37    22s] Loading LEF file ../DirectMap/Synopsys_Libraries/vtvt_tsmc180_lef/vtvt_tsmc180.lef ...
+[05/15 20:51:37    22s] **WARN: (IMPLF-108):	There is no overlap layer defined in any LEF file
+[05/15 20:51:37    22s] so you are unable to create rectilinear partition in a hierarchical flow.
+[05/15 20:51:37    22s] Set DBUPerIGU to M2 pitch 810.
+[05/15 20:51:37    22s] 
+[05/15 20:51:37    22s] viaInitial starts at Mon May 15 20:51:37 2017
+viaInitial ends at Mon May 15 20:51:37 2017
+Loading view definition file from ../DirectMap/innovus/Default.view
+[05/15 20:51:37    22s] Reading vtvt_tsmc180 timing library '/home/lgy/Desktop/Ex_cache/DirectMap/Synopsys_Libraries/vtvt_tsmc180.lib' ...
+[05/15 20:51:38    22s] Read 83 cells in library 'vtvt_tsmc180' 
+[05/15 20:51:38    22s] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.38min, fe_real=3.38min, fe_mem=499.4M) ***
+[05/15 20:51:38    22s] *** Begin netlist parsing (mem=499.4M) ***
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xor2_2' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xor2_2' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xor2_1' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xor2_1' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xnor2_2' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xnor2_2' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'xnor2_1' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'xnor2_1' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or4_4' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or4_4' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or4_2' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or4_2' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or4_1' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or4_1' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or3_4' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or3_4' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or3_2' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or3_2' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\gnd! ' of cell 'or3_1' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (IMPVL-159):	Pin '\vdd! ' of cell 'or3_1' is defined in LEF but not in the timing library.
+[05/15 20:51:38    22s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[05/15 20:51:38    22s] To increase the message display limit, refer to the product command reference manual.
+[05/15 20:51:38    22s] Created 83 new cells from 1 timing libraries.
+[05/15 20:51:38    22s] Reading netlist ...
+[05/15 20:51:38    22s] Backslashed names will retain backslash and a trailing blank character.
+[05/15 20:51:38    22s] Reading verilog netlist 'CacheController.syn.v'
+[05/15 20:51:38    22s] 
+[05/15 20:51:38    22s] *** Memory Usage v#1 (Current mem = 504.441M, initial mem = 164.594M) ***
+[05/15 20:51:38    22s] *** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=504.4M) ***
+[05/15 20:51:38    22s] Top level cell is CacheController.
+[05/15 20:51:38    23s] Hooked 83 DB cells to tlib cells.
+[05/15 20:51:38    23s] Starting recursive module instantiation check.
+[05/15 20:51:38    23s] No recursion found.
+[05/15 20:51:38    23s] Building hierarchical netlist for Cell CacheController ...
+[05/15 20:51:38    23s] *** Netlist is unique.
+[05/15 20:51:38    23s] ** info: there are 85 modules.
+[05/15 20:51:38    23s] ** info: there are 11064 stdCell insts.
+[05/15 20:51:38    23s] 
+[05/15 20:51:38    23s] *** Memory Usage v#1 (Current mem = 530.945M, initial mem = 164.594M) ***
+[05/15 20:51:38    23s] Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+[05/15 20:51:38    23s] Set Default Net Delay as 1000 ps.
+[05/15 20:51:38    23s] Set Default Net Load as 0.5 pF. 
+[05/15 20:51:38    23s] Set Default Input Pin Transition as 0.1 ps.
+[05/15 20:51:38    23s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 20:51:38    23s] Type 'man IMPEXT-2773' for more detail.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 20:51:38    23s] Type 'man IMPEXT-2773' for more detail.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 20:51:38    23s] Type 'man IMPEXT-2773' for more detail.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 20:51:38    23s] Type 'man IMPEXT-2773' for more detail.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 20:51:38    23s] Type 'man IMPEXT-2773' for more detail.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[05/15 20:51:38    23s] Type 'man IMPEXT-2773' for more detail.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.07 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/15 20:51:38    23s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.03 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[05/15 20:51:38    23s] Summary of Active RC-Corners : 
+[05/15 20:51:38    23s]  
+[05/15 20:51:38    23s]  Analysis View: constraint_rule
+[05/15 20:51:38    23s]     RC-Corner Name        : default_rc_corner
+[05/15 20:51:38    23s]     RC-Corner Index       : 0
+[05/15 20:51:38    23s]     RC-Corner Temperature : 25 Celsius
+[05/15 20:51:38    23s]     RC-Corner Cap Table   : ''
+[05/15 20:51:38    23s]     RC-Corner PreRoute Res Factor         : 1
+[05/15 20:51:38    23s]     RC-Corner PreRoute Cap Factor         : 1
+[05/15 20:51:38    23s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/15 20:51:38    23s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/15 20:51:38    23s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/15 20:51:38    23s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[05/15 20:51:38    23s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[05/15 20:51:38    23s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/15 20:51:38    23s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/15 20:51:38    23s] *Info: initialize multi-corner CTS.
+[05/15 20:51:38    23s] Reading timing constraints file '/home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc' ...
+[05/15 20:51:38    23s] Current (total cpu=0:00:23.0, real=0:03:23, peak res=219.3M, current mem=638.5M)
+[05/15 20:51:38    23s] **WARN: (TCLNL-330):	set_input_delay on clock root 'clk' is not supported. You should use the -source option to set_clock_latency to provide this offset. You can also use the global timing_allow_input_delay_on_clock_source to allow set_input_delay assertion to have an effect on clock source paths beginning at this clock root. (File /home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc, Line 309).
+[05/15 20:51:38    23s] 
+[05/15 20:51:38    23s] INFO (CTE): Reading of timing constraints file /home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc completed, with 1 WARNING
+[05/15 20:51:38    23s] WARNING (CTE-25): Line: 10 of File /home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc : Skipped unsupported command: set_max_area
+[05/15 20:51:38    23s] 
+[05/15 20:51:38    23s] 
+[05/15 20:51:38    23s] WARNING (CTE-25): Line: 9 of File /home/lgy/Desktop/Ex_cache/DirectMap/CacheController.sdc : Skipped unsupported command: set_units
+[05/15 20:51:38    23s] 
+[05/15 20:51:38    23s] 
+[05/15 20:51:38    23s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=235.2M, current mem=654.7M)
+[05/15 20:51:38    23s] Current (total cpu=0:00:23.0, real=0:03:23, peak res=235.2M, current mem=654.7M)
+[05/15 20:51:38    23s] Summary for sequential cells idenfication: 
+[05/15 20:51:38    23s] Identified SBFF number: 4
+[05/15 20:51:38    23s] Identified MBFF number: 0
+[05/15 20:51:38    23s] Not identified SBFF number: 8
+[05/15 20:51:38    23s] Not identified MBFF number: 0
+[05/15 20:51:38    23s] Number of sequential cells which are not FFs: 8
+[05/15 20:51:38    23s] 
+[05/15 20:51:38    23s] Total number of combinational cells: 59
+[05/15 20:51:38    23s] Total number of sequential cells: 20
+[05/15 20:51:38    23s] Total number of tristate cells: 4
+[05/15 20:51:38    23s] Total number of level shifter cells: 0
+[05/15 20:51:38    23s] Total number of power gating cells: 0
+[05/15 20:51:38    23s] Total number of isolation cells: 0
+[05/15 20:51:38    23s] Total number of power switch cells: 0
+[05/15 20:51:38    23s] Total number of pulse generator cells: 0
+[05/15 20:51:38    23s] Total number of always on buffers: 0
+[05/15 20:51:38    23s] Total number of retention cells: 0
+[05/15 20:51:38    23s] List of usable buffers: buf_2 buf_1 buf_4 cd_8
+[05/15 20:51:38    23s] Total number of usable buffers: 4
+[05/15 20:51:38    23s] List of unusable buffers:
+[05/15 20:51:38    23s] Total number of unusable buffers: 0
+[05/15 20:51:38    23s] List of usable inverters: inv_2 inv_1 inv_4
+[05/15 20:51:38    23s] Total number of usable inverters: 3
+[05/15 20:51:38    23s] List of unusable inverters:
+[05/15 20:51:38    23s] Total number of unusable inverters: 0
+[05/15 20:51:38    23s] List of identified usable delay cells: cd_12 cd_16
+[05/15 20:51:38    23s] Total number of identified usable delay cells: 2
+[05/15 20:51:38    23s] List of identified unusable delay cells:
+[05/15 20:51:38    23s] Total number of identified unusable delay cells: 0
+[05/15 20:51:38    23s] 
+[05/15 20:51:38    23s] *** Summary of all messages that are not suppressed in this session:
+[05/15 20:51:38    23s] Severity  ID               Count  Summary                                  
+[05/15 20:51:38    23s] WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+[05/15 20:51:38    23s] WARNING   IMPEXT-2766          6  The sheet resistance for layer %s is not...
+[05/15 20:51:38    23s] WARNING   IMPEXT-2773          6  The via resistance between layers %s and...
+[05/15 20:51:38    23s] WARNING   IMPVL-159          166  Pin '%s' of cell '%s' is defined in LEF ...
+[05/15 20:51:38    23s] *** Message Summary: 179 warning(s), 0 error(s)
+[05/15 20:51:38    23s] 
+[05/15 20:52:01    24s] <CMD> getIoFlowFlag
+[05/15 20:52:05    25s] <CMD> setIoFlowFlag 0
+[05/15 20:52:05    25s] <CMD> floorPlan -site CoreSite -r 0.988043478261 0.699982 0.0 0.0 0.0 0.0
+[05/15 20:52:05    25s] Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+[05/15 20:52:05    25s] <CMD> uiSetTool select
+[05/15 20:52:05    25s] <CMD> getIoFlowFlag
+[05/15 20:52:05    25s] <CMD> fit
+[05/15 20:52:07    25s] <CMD> setIoFlowFlag 0
+[05/15 20:52:07    25s] <CMD> floorPlan -site CoreSite -r 0.987430167598 0.699548 0.0 0.0 0.0 0.0
+[05/15 20:52:07    25s] Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+[05/15 20:52:07    25s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[05/15 20:52:07    25s] <CMD> uiSetTool select
+[05/15 20:52:07    25s] <CMD> getIoFlowFlag
+[05/15 20:52:07    25s] <CMD> fit
+[05/15 20:52:21    26s] <CMD> getIoFlowFlag
+[05/15 20:52:29    26s] <CMD> setIoFlowFlag 0
+[05/15 20:52:29    26s] <CMD> floorPlan -site CoreSite -r 0.967519004838 0.699219 10.0 10 10 10
+[05/15 20:52:29    26s] Snap core to left to manufacture grid: 9.9900.
+[05/15 20:52:29    26s] Snap core to bottom to manufacture grid: 9.9900.
+[05/15 20:52:29    26s] Snap core to right to manufacture grid: 9.9900.
+[05/15 20:52:29    26s] Snap core to top to manufacture grid: 9.9900.
+[05/15 20:52:29    26s] Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+[05/15 20:52:29    26s] <CMD> uiSetTool select
+[05/15 20:52:29    26s] <CMD> getIoFlowFlag
+[05/15 20:52:29    26s] <CMD> fit
+[05/15 20:52:30    26s] <CMD> setIoFlowFlag 0
+[05/15 20:52:30    26s] <CMD> floorPlan -site CoreSite -r 0.967519004838 0.699219 10.53 10.53 10.53 10.53
+[05/15 20:52:30    26s] Generated pitch 1.215 in metal6 is different from 1.62 defined in technology file in preferred direction.
+[05/15 20:52:30    26s] <CMD> uiSetTool select
+[05/15 20:52:30    26s] <CMD> getIoFlowFlag
+[05/15 20:52:30    26s] <CMD> fit
+[05/15 20:54:13    32s] <CMD> clearGlobalNets
+[05/15 20:54:13    32s] <CMD> globalNetConnect vdd! -type pgpin -pin vdd! -inst * -module {}
+[05/15 20:54:13    32s] <CMD> globalNetConnect gnd! -type pgpin -pin gnd! -inst * -module {}
+[05/15 20:54:16    32s] Warning: net addr_mem[1] is not connected to global special net.
+[05/15 20:54:16    32s] Warning: net addr_mem[0] is not connected to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst mem_done_reg is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst state_reg[0] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst rd_temp_reg is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[0] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[1] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[2] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[3] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[4] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[5] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[6] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[7] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[8] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[9] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[10] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[11] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[12] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[13] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[14] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[15] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[16] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[17] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[18] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[19] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[20] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[21] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[22] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[23] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[24] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[25] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[26] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[27] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[28] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[29] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[30] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst addr_resp_tri_enable_reg[31] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst busy_reg is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[0] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[1] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[2] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[3] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[4] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[5] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[6] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[7] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[8] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[9] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[10] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[11] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[12] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[13] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[14] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[15] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[16] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[17] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[18] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[19] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[20] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[21] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[22] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[23] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[24] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[25] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[26] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[27] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[28] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[29] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[30] is not connect to global special net.
+[05/15 20:54:16    32s] Warning: term rb of inst data_rd_tri_enable_reg[31] is not connect to global special net.
+[05/15 20:54:19    33s] <CMD> clearGlobalNets
+[05/15 20:54:19    33s] <CMD> globalNetConnect vdd! -type pgpin -pin vdd! -inst * -module {}
+[05/15 20:54:19    33s] <CMD> globalNetConnect gnd! -type pgpin -pin gnd! -inst * -module {}
+[05/15 20:54:19    33s] Warning: net addr_mem[1] is not connected to global special net.
+[05/15 20:54:19    33s] Warning: net addr_mem[0] is not connected to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst mem_done_reg is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst state_reg[0] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst rd_temp_reg is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[0] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[1] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[2] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[3] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[4] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[5] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[6] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[7] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[8] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[9] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[10] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[11] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[12] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[13] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[14] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[15] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[16] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[17] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[18] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[19] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[20] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[21] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[22] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[23] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[24] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[25] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[26] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[27] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[28] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[29] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[30] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst addr_resp_tri_enable_reg[31] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst busy_reg is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[0] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[1] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[2] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[3] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[4] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[5] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[6] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[7] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[8] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[9] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[10] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[11] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[12] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[13] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[14] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[15] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[16] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[17] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[18] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[19] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[20] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[21] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[22] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[23] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[24] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[25] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[26] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[27] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[28] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[29] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[30] is not connect to global special net.
+[05/15 20:54:19    33s] Warning: term rb of inst data_rd_tri_enable_reg[31] is not connect to global special net.
+[05/15 20:55:43    37s] <CMD> set sprCreateIeRingNets {}
+[05/15 20:55:43    37s] <CMD> set sprCreateIeRingLayers {}
+[05/15 20:55:43    37s] <CMD> set sprCreateIeRingWidth 1.0
+[05/15 20:55:43    37s] <CMD> set sprCreateIeRingSpacing 1.0
+[05/15 20:55:43    37s] <CMD> set sprCreateIeRingOffset 1.0
+[05/15 20:55:43    37s] <CMD> set sprCreateIeRingThreshold 1.0
+[05/15 20:55:43    37s] <CMD> set sprCreateIeRingJogDistance 1.0
+[05/15 20:55:56    38s] <CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer metal6 -type core_rings -jog_distance 0.81 -threshold 0.81 -nets {gnd! vdd!} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 0.45 -spacing 0.45 -offset 0.81
+[05/15 20:55:56    38s] 
+[05/15 20:55:56    38s] The power planner created 8 wires.
+[05/15 20:55:56    38s] <CMD_INTERNAL> editPushUndo
+[05/15 20:55:56    38s] *** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 910.5M) ***
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:11    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:12    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 20:56:17    39s] <CMD> getCTSMode -engine -quiet
+[05/15 21:04:58    64s] <CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer metal6 -type core_rings -jog_distance 0.81 -threshold 0.81 -nets {gnd! vdd!} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 0.45 -spacing 0.45 -offset 0.81
+[05/15 21:04:58    64s] 
+[05/15 21:04:58    64s] *** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 911.5M) ***
+[05/15 21:05:53    67s] <CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer metal6 -type core_rings -jog_distance 0.81 -threshold 0.81 -nets {gnd! vdd!} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal1 top metal1 right metal2 left metal2} -width 0.45 -spacing 0.45 -offset 0.81
+[05/15 21:05:53    67s] 
+[05/15 21:05:53    67s] *** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 911.5M) ***
+[05/15 21:06:46    71s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+[05/15 21:06:46    71s] *** Begin SPECIAL ROUTE on Mon May 15 21:06:46 2017 ***
+[05/15 21:06:46    71s] SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+[05/15 21:06:46    71s] SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+[05/15 21:06:46    71s] 
+[05/15 21:06:46    71s] Begin option processing ...
+[05/15 21:06:46    71s] srouteConnectPowerBump set to false
+[05/15 21:06:46    71s] routeSelectNet set to "gnd! vdd!"
+[05/15 21:06:46    71s] routeSpecial set to true
+[05/15 21:06:46    71s] srouteBlockPin set to "useLef"
+[05/15 21:06:46    71s] srouteBottomLayerLimit set to 1
+[05/15 21:06:46    71s] srouteBottomTargetLayerLimit set to 1
+[05/15 21:06:46    71s] srouteConnectConverterPin set to false
+[05/15 21:06:46    71s] srouteCrossoverViaBottomLayer set to 1
+[05/15 21:06:46    71s] srouteCrossoverViaTopLayer set to 6
+[05/15 21:06:46    71s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[05/15 21:06:46    71s] srouteFollowCorePinEnd set to 3
+[05/15 21:06:46    71s] srouteJogControl set to "preferWithChanges differentLayer"
+[05/15 21:06:46    71s] sroutePadPinAllPorts set to true
+[05/15 21:06:46    71s] sroutePreserveExistingRoutes set to true
+[05/15 21:06:46    71s] srouteRoutePowerBarPortOnBothDir set to true
+[05/15 21:06:46    71s] srouteStopBlockPin set to "nearestTarget"
+[05/15 21:06:46    71s] srouteTopLayerLimit set to 6
+[05/15 21:06:46    71s] srouteTopTargetLayerLimit set to 6
+[05/15 21:06:46    71s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1507.00 megs.
+[05/15 21:06:46    71s] 
+[05/15 21:06:46    71s] Reading DB technology information...
+[05/15 21:06:46    71s] Finished reading DB technology information.
+[05/15 21:06:46    71s] Reading floorplan and netlist information...
+[05/15 21:06:46    71s] Finished reading floorplan and netlist information.
+[05/15 21:06:46    71s] Read in 12 layers, 6 routing layers, 0 overlap layer
+[05/15 21:06:46    71s] Read in 84 macros, 18 used
+[05/15 21:06:46    71s] Read in 18 components
+[05/15 21:06:46    71s]   18 core components: 18 unplaced, 0 placed, 0 fixed
+[05/15 21:06:46    71s] Read in 297 logical pins
+[05/15 21:06:46    71s] Read in 297 nets
+[05/15 21:06:46    71s] Read in 2 special nets, 2 routed
+[05/15 21:06:46    71s] Read in 36 terminals
+[05/15 21:06:46    71s] 2 nets selected.
+[05/15 21:06:46    71s] 
+[05/15 21:06:46    71s] Begin power routing ...
+[05/15 21:06:46    71s] Bad via found: M1_N
+[05/15 21:06:46    71s] Bad via found: M1_P
+[05/15 21:06:46    71s] Bad via found: M1_POLY
+[05/15 21:06:46    71s] Bad via found: NTAP
+[05/15 21:06:46    71s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+[05/15 21:06:46    71s] **WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+[05/15 21:06:46    71s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:06:46    71s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:06:46    71s] Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:06:46    71s] **WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+[05/15 21:06:46    71s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:06:46    71s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:06:46    71s] Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:06:46    71s] CPU time for FollowPin 0 seconds
+[05/15 21:06:46    71s] CPU time for FollowPin 0 seconds
+[05/15 21:06:46    71s] Bad via found: M1_N
+[05/15 21:06:46    71s] Bad via found: M1_P
+[05/15 21:06:46    71s] Bad via found: M1_POLY
+[05/15 21:06:46    71s] Bad via found: NTAP
+[05/15 21:06:46    71s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+[05/15 21:06:46    71s]   Number of IO ports routed: 0
+[05/15 21:06:46    71s]   Number of Block ports routed: 0
+[05/15 21:06:46    71s]   Number of Stripe ports routed: 0
+[05/15 21:06:46    71s]   Number of Core ports routed: 202
+[05/15 21:06:46    71s]   Number of Pad ports routed: 0
+[05/15 21:06:46    71s]   Number of Power Bump ports routed: 0
+[05/15 21:06:46    71s]   Number of Followpin connections: 101
+[05/15 21:06:46    71s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1513.00 megs.
+[05/15 21:06:46    71s] 
+[05/15 21:06:46    71s] 
+[05/15 21:06:46    71s] 
+[05/15 21:06:46    71s]  Begin updating DB with routing results ...
+[05/15 21:06:46    71s]  Updating DB with 12 via definition ...Extracting standard cell pins and blockage ...... 
+[05/15 21:06:46    71s] Pin and blockage extraction finished
+[05/15 21:06:46    71s] 
+[05/15 21:06:46    71s] 
+sroute post-processing starts at Mon May 15 21:06:46 2017
+The viaGen is rebuilding shadow vias for net gnd!.
+[05/15 21:06:46    71s] sroute post-processing ends at Mon May 15 21:06:46 2017
+
+sroute post-processing starts at Mon May 15 21:06:46 2017
+The viaGen is rebuilding shadow vias for net vdd!.
+[05/15 21:06:46    71s] sroute post-processing ends at Mon May 15 21:06:46 2017
+sroute: Total CPU time used = 0:0:0
+[05/15 21:06:46    71s] sroute: Total Real time used = 0:0:0
+[05/15 21:06:46    71s] sroute: Total Memory used = 6.30 megs
+[05/15 21:06:46    71s] sroute: Total Peak Memory used = 918.77 megs
+[05/15 21:06:47    71s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+[05/15 21:06:47    71s] *** Begin SPECIAL ROUTE on Mon May 15 21:06:47 2017 ***
+[05/15 21:06:47    71s] SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+[05/15 21:06:47    71s] SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+[05/15 21:06:47    71s] 
+[05/15 21:06:47    71s] Begin option processing ...
+[05/15 21:06:47    71s] srouteConnectPowerBump set to false
+[05/15 21:06:47    71s] routeSelectNet set to "gnd! vdd!"
+[05/15 21:06:47    71s] routeSpecial set to true
+[05/15 21:06:47    71s] srouteBlockPin set to "useLef"
+[05/15 21:06:47    71s] srouteBottomLayerLimit set to 1
+[05/15 21:06:47    71s] srouteBottomTargetLayerLimit set to 1
+[05/15 21:06:47    71s] srouteConnectConverterPin set to false
+[05/15 21:06:47    71s] srouteCrossoverViaBottomLayer set to 1
+[05/15 21:06:47    71s] srouteCrossoverViaTopLayer set to 6
+[05/15 21:06:47    71s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[05/15 21:06:47    71s] srouteFollowCorePinEnd set to 3
+[05/15 21:06:47    71s] srouteJogControl set to "preferWithChanges differentLayer"
+[05/15 21:06:47    71s] sroutePadPinAllPorts set to true
+[05/15 21:06:47    71s] sroutePreserveExistingRoutes set to true
+[05/15 21:06:47    71s] srouteRoutePowerBarPortOnBothDir set to true
+[05/15 21:06:47    71s] srouteStopBlockPin set to "nearestTarget"
+[05/15 21:06:47    71s] srouteTopLayerLimit set to 6
+[05/15 21:06:47    71s] srouteTopTargetLayerLimit set to 6
+[05/15 21:06:47    71s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1513.00 megs.
+[05/15 21:06:47    71s] 
+[05/15 21:06:47    71s] Reading DB technology information...
+[05/15 21:06:47    71s] Finished reading DB technology information.
+[05/15 21:06:47    71s] Reading floorplan and netlist information...
+[05/15 21:06:47    71s] Finished reading floorplan and netlist information.
+[05/15 21:06:47    71s] Read in 12 layers, 6 routing layers, 0 overlap layer
+[05/15 21:06:47    71s] Read in 84 macros, 18 used
+[05/15 21:06:47    71s] Read in 18 components
+[05/15 21:06:47    71s]   18 core components: 18 unplaced, 0 placed, 0 fixed
+[05/15 21:06:47    71s] Read in 297 logical pins
+[05/15 21:06:47    71s] Read in 297 nets
+[05/15 21:06:47    71s] Read in 2 special nets, 2 routed
+[05/15 21:06:47    71s] Read in 36 terminals
+[05/15 21:06:47    71s] 2 nets selected.
+[05/15 21:06:47    71s] 
+[05/15 21:06:47    71s] Begin power routing ...
+[05/15 21:06:47    71s] Bad via found: M1_N
+[05/15 21:06:47    71s] Bad via found: M1_P
+[05/15 21:06:47    71s] Bad via found: M1_POLY
+[05/15 21:06:47    71s] Bad via found: NTAP
+[05/15 21:06:47    71s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+[05/15 21:06:47    71s] **WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+[05/15 21:06:47    71s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:06:47    71s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:06:47    71s] Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:06:47    71s] **WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+[05/15 21:06:47    71s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:06:47    71s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:06:47    71s] Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:06:47    71s] CPU time for FollowPin 0 seconds
+[05/15 21:06:47    71s] CPU time for FollowPin 0 seconds
+[05/15 21:06:47    71s] Bad via found: M1_N
+[05/15 21:06:47    71s] Bad via found: M1_P
+[05/15 21:06:47    71s] Bad via found: M1_POLY
+[05/15 21:06:47    71s] Bad via found: NTAP
+[05/15 21:06:47    71s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+[05/15 21:06:47    71s]   Number of IO ports routed: 0
+[05/15 21:06:47    71s]   Number of Block ports routed: 0
+[05/15 21:06:47    71s]   Number of Stripe ports routed: 0
+[05/15 21:06:47    71s]   Number of Core ports routed: 0
+[05/15 21:06:47    71s]   Number of Pad ports routed: 0
+[05/15 21:06:47    71s]   Number of Power Bump ports routed: 0
+[05/15 21:06:47    71s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1517.00 megs.
+[05/15 21:06:47    71s] 
+[05/15 21:06:47    71s] 
+[05/15 21:06:47    71s] 
+[05/15 21:06:47    71s]  Begin updating DB with routing results ...
+[05/15 21:06:47    71s]  Updating DB with 14 via definition ...
+[05/15 21:06:47    71s] sroute: Total CPU time used = 0:0:0
+[05/15 21:06:47    71s] sroute: Total Real time used = 0:0:0
+[05/15 21:06:47    71s] sroute: Total Memory used = 0.25 megs
+[05/15 21:06:47    71s] sroute: Total Peak Memory used = 919.02 megs
+[05/15 21:07:51    74s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 0 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+[05/15 21:07:51    74s] *** Begin SPECIAL ROUTE on Mon May 15 21:07:51 2017 ***
+[05/15 21:07:51    74s] SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+[05/15 21:07:51    74s] SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+[05/15 21:07:51    74s] 
+[05/15 21:07:51    74s] Begin option processing ...
+[05/15 21:07:51    74s] srouteConnectPowerBump set to false
+[05/15 21:07:51    74s] routeSelectNet set to "gnd! vdd!"
+[05/15 21:07:51    74s] routeSpecial set to true
+[05/15 21:07:51    74s] srouteBlockPin set to "useLef"
+[05/15 21:07:51    74s] srouteBottomLayerLimit set to 1
+[05/15 21:07:51    74s] srouteBottomTargetLayerLimit set to 1
+[05/15 21:07:51    74s] srouteConnectConverterPin set to false
+[05/15 21:07:51    74s] srouteCrossoverViaBottomLayer set to 1
+[05/15 21:07:51    74s] srouteCrossoverViaTopLayer set to 6
+[05/15 21:07:51    74s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[05/15 21:07:51    74s] srouteFollowCorePinEnd set to 3
+[05/15 21:07:51    74s] srouteJogControl set to "sameLayer"
+[05/15 21:07:51    74s] srouteNoLayerChangeRoute set to true
+[05/15 21:07:51    74s] sroutePadPinAllPorts set to true
+[05/15 21:07:51    74s] sroutePreserveExistingRoutes set to true
+[05/15 21:07:51    74s] srouteRoutePowerBarPortOnBothDir set to true
+[05/15 21:07:51    74s] srouteStopBlockPin set to "nearestTarget"
+[05/15 21:07:51    74s] srouteTopLayerLimit set to 6
+[05/15 21:07:51    74s] srouteTopTargetLayerLimit set to 6
+[05/15 21:07:51    74s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1517.00 megs.
+[05/15 21:07:51    74s] 
+[05/15 21:07:51    74s] Reading DB technology information...
+[05/15 21:07:51    74s] Finished reading DB technology information.
+[05/15 21:07:51    74s] Reading floorplan and netlist information...
+[05/15 21:07:51    74s] Finished reading floorplan and netlist information.
+[05/15 21:07:51    74s] Read in 12 layers, 6 routing layers, 0 overlap layer
+[05/15 21:07:51    74s] Read in 84 macros, 18 used
+[05/15 21:07:51    74s] Read in 18 components
+[05/15 21:07:51    74s]   18 core components: 18 unplaced, 0 placed, 0 fixed
+[05/15 21:07:51    74s] Read in 297 logical pins
+[05/15 21:07:51    74s] Read in 297 nets
+[05/15 21:07:51    74s] Read in 2 special nets, 2 routed
+[05/15 21:07:51    74s] Read in 36 terminals
+[05/15 21:07:51    74s] 2 nets selected.
+[05/15 21:07:51    74s] 
+[05/15 21:07:51    74s] Begin power routing ...
+[05/15 21:07:51    74s] Bad via found: M1_N
+[05/15 21:07:51    74s] Bad via found: M1_P
+[05/15 21:07:51    74s] Bad via found: M1_POLY
+[05/15 21:07:51    74s] Bad via found: NTAP
+[05/15 21:07:51    74s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+[05/15 21:07:51    74s] **WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+[05/15 21:07:51    74s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:07:51    74s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:07:51    74s] Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:07:51    74s] **WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+[05/15 21:07:51    74s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:07:51    74s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:07:51    74s] Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:07:51    74s] CPU time for FollowPin 0 seconds
+[05/15 21:07:51    74s] CPU time for FollowPin 0 seconds
+[05/15 21:07:51    74s] Bad via found: M1_N
+[05/15 21:07:51    74s] Bad via found: M1_P
+[05/15 21:07:51    74s] Bad via found: M1_POLY
+[05/15 21:07:51    74s] Bad via found: NTAP
+[05/15 21:07:51    74s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+[05/15 21:07:51    74s]   Number of IO ports routed: 0
+[05/15 21:07:51    74s]   Number of Block ports routed: 0
+[05/15 21:07:51    74s]   Number of Stripe ports routed: 0
+[05/15 21:07:51    74s]   Number of Core ports routed: 0
+[05/15 21:07:51    74s]   Number of Pad ports routed: 0
+[05/15 21:07:51    74s]   Number of Power Bump ports routed: 0
+[05/15 21:07:51    74s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+[05/15 21:07:51    74s] 
+[05/15 21:07:51    74s] 
+[05/15 21:07:51    74s] 
+[05/15 21:07:51    74s]  Begin updating DB with routing results ...
+[05/15 21:07:51    74s]  Updating DB with 14 via definition ...
+[05/15 21:07:51    74s] sroute: Total CPU time used = 0:0:0
+[05/15 21:07:51    74s] sroute: Total Real time used = 0:0:0
+[05/15 21:07:51    74s] sroute: Total Memory used = 1.00 megs
+[05/15 21:07:51    74s] sroute: Total Peak Memory used = 920.02 megs
+[05/15 21:08:01    75s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+[05/15 21:08:02    75s] *** Begin SPECIAL ROUTE on Mon May 15 21:08:02 2017 ***
+[05/15 21:08:02    75s] SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+[05/15 21:08:02    75s] SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+[05/15 21:08:02    75s] 
+[05/15 21:08:02    75s] Begin option processing ...
+[05/15 21:08:02    75s] srouteConnectPowerBump set to false
+[05/15 21:08:02    75s] routeSelectNet set to "gnd! vdd!"
+[05/15 21:08:02    75s] routeSpecial set to true
+[05/15 21:08:02    75s] srouteBlockPin set to "useLef"
+[05/15 21:08:02    75s] srouteBottomLayerLimit set to 1
+[05/15 21:08:02    75s] srouteBottomTargetLayerLimit set to 1
+[05/15 21:08:02    75s] srouteConnectConverterPin set to false
+[05/15 21:08:02    75s] srouteCrossoverViaBottomLayer set to 1
+[05/15 21:08:02    75s] srouteCrossoverViaTopLayer set to 6
+[05/15 21:08:02    75s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[05/15 21:08:02    75s] srouteFollowCorePinEnd set to 3
+[05/15 21:08:02    75s] srouteJogControl set to "preferWithChanges differentLayer"
+[05/15 21:08:02    75s] sroutePadPinAllPorts set to true
+[05/15 21:08:02    75s] sroutePreserveExistingRoutes set to true
+[05/15 21:08:02    75s] srouteRoutePowerBarPortOnBothDir set to true
+[05/15 21:08:02    75s] srouteStopBlockPin set to "nearestTarget"
+[05/15 21:08:02    75s] srouteTopLayerLimit set to 6
+[05/15 21:08:02    75s] srouteTopTargetLayerLimit set to 6
+[05/15 21:08:02    75s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+[05/15 21:08:02    75s] 
+[05/15 21:08:02    75s] Reading DB technology information...
+[05/15 21:08:02    75s] Finished reading DB technology information.
+[05/15 21:08:02    75s] Reading floorplan and netlist information...
+[05/15 21:08:02    75s] Finished reading floorplan and netlist information.
+[05/15 21:08:02    75s] Read in 12 layers, 6 routing layers, 0 overlap layer
+[05/15 21:08:02    75s] Read in 84 macros, 18 used
+[05/15 21:08:02    75s] Read in 18 components
+[05/15 21:08:02    75s]   18 core components: 18 unplaced, 0 placed, 0 fixed
+[05/15 21:08:02    75s] Read in 297 logical pins
+[05/15 21:08:02    75s] Read in 297 nets
+[05/15 21:08:02    75s] Read in 2 special nets, 2 routed
+[05/15 21:08:02    75s] Read in 36 terminals
+[05/15 21:08:02    75s] 2 nets selected.
+[05/15 21:08:02    75s] 
+[05/15 21:08:02    75s] Begin power routing ...
+[05/15 21:08:02    75s] Bad via found: M1_N
+[05/15 21:08:02    75s] Bad via found: M1_P
+[05/15 21:08:02    75s] Bad via found: M1_POLY
+[05/15 21:08:02    75s] Bad via found: NTAP
+[05/15 21:08:02    75s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+[05/15 21:08:02    75s] **WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+[05/15 21:08:02    75s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:08:02    75s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:08:02    75s] Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:08:02    75s] **WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+[05/15 21:08:02    75s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:08:02    75s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:08:02    75s] Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:08:02    75s] CPU time for FollowPin 0 seconds
+[05/15 21:08:02    75s] CPU time for FollowPin 0 seconds
+[05/15 21:08:02    75s] Bad via found: M1_N
+[05/15 21:08:02    75s] Bad via found: M1_P
+[05/15 21:08:02    75s] Bad via found: M1_POLY
+[05/15 21:08:02    75s] Bad via found: NTAP
+[05/15 21:08:02    75s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+[05/15 21:08:02    75s]   Number of IO ports routed: 0
+[05/15 21:08:02    75s]   Number of Block ports routed: 0
+[05/15 21:08:02    75s]   Number of Stripe ports routed: 0
+[05/15 21:08:02    75s]   Number of Core ports routed: 0
+[05/15 21:08:02    75s]   Number of Pad ports routed: 0
+[05/15 21:08:02    75s]   Number of Power Bump ports routed: 0
+[05/15 21:08:02    75s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+[05/15 21:08:02    75s] 
+[05/15 21:08:02    75s] 
+[05/15 21:08:02    75s] 
+[05/15 21:08:02    75s]  Begin updating DB with routing results ...
+[05/15 21:08:02    75s]  Updating DB with 14 via definition ...
+[05/15 21:08:02    75s] sroute: Total CPU time used = 0:0:0
+[05/15 21:08:02    75s] sroute: Total Real time used = 0:0:0
+[05/15 21:08:02    75s] sroute: Total Memory used = -0.12 megs
+[05/15 21:08:02    75s] sroute: Total Peak Memory used = 919.89 megs
+[05/15 21:08:12    76s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -deleteExistingRoutes -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+[05/15 21:08:12    76s] *** Begin SPECIAL ROUTE on Mon May 15 21:08:12 2017 ***
+[05/15 21:08:12    76s] SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+[05/15 21:08:12    76s] SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+[05/15 21:08:12    76s] 
+[05/15 21:08:12    76s] Begin option processing ...
+[05/15 21:08:12    76s] srouteConnectPowerBump set to false
+[05/15 21:08:12    76s] routeSelectNet set to "gnd! vdd!"
+[05/15 21:08:12    76s] routeSpecial set to true
+[05/15 21:08:12    76s] srouteBlockPin set to "useLef"
+[05/15 21:08:12    76s] srouteBottomLayerLimit set to 1
+[05/15 21:08:12    76s] srouteBottomTargetLayerLimit set to 1
+[05/15 21:08:12    76s] srouteConnectConverterPin set to false
+[05/15 21:08:12    76s] srouteCrossoverViaBottomLayer set to 1
+[05/15 21:08:12    76s] srouteCrossoverViaTopLayer set to 6
+[05/15 21:08:12    76s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[05/15 21:08:12    76s] srouteFollowCorePinEnd set to 3
+[05/15 21:08:12    76s] srouteJogControl set to "preferWithChanges differentLayer"
+[05/15 21:08:12    76s] sroutePadPinAllPorts set to true
+[05/15 21:08:12    76s] srouteRoutePowerBarPortOnBothDir set to true
+[05/15 21:08:12    76s] srouteStopBlockPin set to "nearestTarget"
+[05/15 21:08:12    76s] srouteTopLayerLimit set to 6
+[05/15 21:08:12    76s] srouteTopTargetLayerLimit set to 6
+[05/15 21:08:12    76s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+[05/15 21:08:12    76s] 
+[05/15 21:08:12    76s] Reading DB technology information...
+[05/15 21:08:12    76s] Finished reading DB technology information.
+[05/15 21:08:12    76s] Reading floorplan and netlist information...
+[05/15 21:08:12    76s] Finished reading floorplan and netlist information.
+[05/15 21:08:12    76s] Read in 12 layers, 6 routing layers, 0 overlap layer
+[05/15 21:08:12    76s] Read in 84 macros, 18 used
+[05/15 21:08:12    76s] Read in 18 components
+[05/15 21:08:12    76s]   18 core components: 18 unplaced, 0 placed, 0 fixed
+[05/15 21:08:12    76s] Read in 297 logical pins
+[05/15 21:08:12    76s] Read in 297 nets
+[05/15 21:08:12    76s] Read in 2 special nets, 2 routed
+[05/15 21:08:12    76s] Read in 36 terminals
+[05/15 21:08:12    76s] 2 nets selected.
+[05/15 21:08:12    76s] 
+[05/15 21:08:12    76s] Begin power routing ...
+[05/15 21:08:12    76s] **WARN: (IMPSR-386):	204 wires and 0 via of shape COREWIRE of net vdd! removed
+[05/15 21:08:12    76s] **WARN: (IMPSR-386):	51 wires and 0 via of shape FOLLOWPIN of net vdd! removed
+[05/15 21:08:12    76s] **WARN: (IMPSR-386):	200 wires and 0 via of shape COREWIRE of net gnd! removed
+[05/15 21:08:12    76s] **WARN: (IMPSR-386):	50 wires and 0 via of shape FOLLOWPIN of net gnd! removed
+[05/15 21:08:12    76s] Bad via found: M1_N
+[05/15 21:08:12    76s] Bad via found: M1_P
+[05/15 21:08:12    76s] Bad via found: M1_POLY
+[05/15 21:08:12    76s] Bad via found: NTAP
+[05/15 21:08:12    76s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+[05/15 21:08:12    76s] **WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+[05/15 21:08:12    76s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:08:12    76s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:08:12    76s] Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:08:12    76s] **WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+[05/15 21:08:12    76s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:08:12    76s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:08:12    76s] Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:08:12    76s] CPU time for FollowPin 0 seconds
+[05/15 21:08:12    76s] CPU time for FollowPin 0 seconds
+[05/15 21:08:12    76s] Bad via found: M1_N
+[05/15 21:08:12    76s] Bad via found: M1_P
+[05/15 21:08:12    76s] Bad via found: M1_POLY
+[05/15 21:08:12    76s] Bad via found: NTAP
+[05/15 21:08:12    76s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+[05/15 21:08:12    76s]   Number of Core ports routed: 202
+[05/15 21:08:12    76s]   Number of Followpin connections: 101
+[05/15 21:08:12    76s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+[05/15 21:08:12    76s] 
+[05/15 21:08:12    76s] 
+[05/15 21:08:12    76s] 
+[05/15 21:08:12    76s]  Begin updating DB with routing results ...
+[05/15 21:08:12    76s]  Updating DB with 16 via definition ...
+[05/15 21:08:12    76s] 
+sroute post-processing starts at Mon May 15 21:08:12 2017
+The viaGen is rebuilding shadow vias for net gnd!.
+[05/15 21:08:12    76s] sroute post-processing ends at Mon May 15 21:08:12 2017
+
+sroute post-processing starts at Mon May 15 21:08:12 2017
+The viaGen is rebuilding shadow vias for net vdd!.
+[05/15 21:08:12    76s] sroute post-processing ends at Mon May 15 21:08:12 2017
+sroute: Total CPU time used = 0:0:0
+[05/15 21:08:12    76s] sroute: Total Real time used = 0:0:0
+[05/15 21:08:12    76s] sroute: Total Memory used = -0.12 megs
+[05/15 21:08:12    76s] sroute: Total Peak Memory used = 919.77 megs
+[05/15 21:08:18    76s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+[05/15 21:08:18    76s] *** Begin SPECIAL ROUTE on Mon May 15 21:08:18 2017 ***
+[05/15 21:08:18    76s] SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+[05/15 21:08:18    76s] SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+[05/15 21:08:18    76s] 
+[05/15 21:08:18    76s] Begin option processing ...
+[05/15 21:08:18    76s] srouteConnectPowerBump set to false
+[05/15 21:08:18    76s] routeSelectNet set to "gnd! vdd!"
+[05/15 21:08:18    76s] routeSpecial set to true
+[05/15 21:08:18    76s] srouteBlockPin set to "useLef"
+[05/15 21:08:18    76s] srouteBottomLayerLimit set to 1
+[05/15 21:08:18    76s] srouteBottomTargetLayerLimit set to 1
+[05/15 21:08:18    76s] srouteConnectConverterPin set to false
+[05/15 21:08:18    76s] srouteCrossoverViaBottomLayer set to 1
+[05/15 21:08:18    76s] srouteCrossoverViaTopLayer set to 6
+[05/15 21:08:18    76s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[05/15 21:08:18    76s] srouteFollowCorePinEnd set to 3
+[05/15 21:08:18    76s] srouteJogControl set to "preferWithChanges differentLayer"
+[05/15 21:08:18    76s] sroutePadPinAllPorts set to true
+[05/15 21:08:18    76s] sroutePreserveExistingRoutes set to true
+[05/15 21:08:18    76s] srouteRoutePowerBarPortOnBothDir set to true
+[05/15 21:08:18    76s] srouteStopBlockPin set to "nearestTarget"
+[05/15 21:08:18    76s] srouteTopLayerLimit set to 6
+[05/15 21:08:18    76s] srouteTopTargetLayerLimit set to 6
+[05/15 21:08:18    76s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1518.00 megs.
+[05/15 21:08:18    76s] 
+[05/15 21:08:18    76s] Reading DB technology information...
+[05/15 21:08:18    76s] Finished reading DB technology information.
+[05/15 21:08:18    76s] Reading floorplan and netlist information...
+[05/15 21:08:18    76s] Finished reading floorplan and netlist information.
+[05/15 21:08:18    76s] Read in 12 layers, 6 routing layers, 0 overlap layer
+[05/15 21:08:18    76s] Read in 84 macros, 18 used
+[05/15 21:08:18    76s] Read in 18 components
+[05/15 21:08:18    76s]   18 core components: 18 unplaced, 0 placed, 0 fixed
+[05/15 21:08:18    76s] Read in 297 logical pins
+[05/15 21:08:18    76s] Read in 297 nets
+[05/15 21:08:18    76s] Read in 2 special nets, 2 routed
+[05/15 21:08:18    76s] Read in 36 terminals
+[05/15 21:08:18    76s] 2 nets selected.
+[05/15 21:08:18    76s] 
+[05/15 21:08:18    76s] Begin power routing ...
+[05/15 21:08:18    76s] Bad via found: M1_N
+[05/15 21:08:18    76s] Bad via found: M1_P
+[05/15 21:08:18    76s] Bad via found: M1_POLY
+[05/15 21:08:18    76s] Bad via found: NTAP
+[05/15 21:08:18    76s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+[05/15 21:08:18    76s] **WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+[05/15 21:08:18    76s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:08:18    76s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:08:18    76s] Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:08:18    76s] **WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+[05/15 21:08:18    76s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:08:18    76s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:08:18    76s] Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:08:18    76s] CPU time for FollowPin 0 seconds
+[05/15 21:08:18    76s] CPU time for FollowPin 0 seconds
+[05/15 21:08:18    76s] Bad via found: M1_N
+[05/15 21:08:18    76s] Bad via found: M1_P
+[05/15 21:08:18    76s] Bad via found: M1_POLY
+[05/15 21:08:18    76s] Bad via found: NTAP
+[05/15 21:08:18    76s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+[05/15 21:08:18    76s]   Number of IO ports routed: 0
+[05/15 21:08:18    76s]   Number of Block ports routed: 0
+[05/15 21:08:18    76s]   Number of Stripe ports routed: 0
+[05/15 21:08:18    76s]   Number of Core ports routed: 0
+[05/15 21:08:18    76s]   Number of Pad ports routed: 0
+[05/15 21:08:18    76s]   Number of Power Bump ports routed: 0
+[05/15 21:08:18    76s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1519.00 megs.
+[05/15 21:08:18    76s] 
+[05/15 21:08:18    76s] 
+[05/15 21:08:18    76s] 
+[05/15 21:08:18    76s]  Begin updating DB with routing results ...
+[05/15 21:08:18    76s]  Updating DB with 14 via definition ...
+[05/15 21:08:18    76s] sroute: Total CPU time used = 0:0:0
+[05/15 21:08:18    76s] sroute: Total Real time used = 0:0:0
+[05/15 21:08:18    76s] sroute: Total Memory used = 1.00 megs
+[05/15 21:08:18    76s] sroute: Total Peak Memory used = 920.77 megs
+[05/15 21:08:19    77s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { metal1 metal6 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { metal1 metal6 } -nets { gnd! vdd! } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { metal1 metal6 }
+[05/15 21:08:19    77s] *** Begin SPECIAL ROUTE on Mon May 15 21:08:19 2017 ***
+[05/15 21:08:19    77s] SPECIAL ROUTE ran on directory: /home/lgy/Desktop/Ex_cache/TwoWayAssociative
+[05/15 21:08:19    77s] SPECIAL ROUTE ran on machine: Orgrimmar (Linux 2.6.32-504.3.3.el6.x86_64 Xeon 1.20Ghz)
+[05/15 21:08:19    77s] 
+[05/15 21:08:19    77s] Begin option processing ...
+[05/15 21:08:19    77s] srouteConnectPowerBump set to false
+[05/15 21:08:19    77s] routeSelectNet set to "gnd! vdd!"
+[05/15 21:08:19    77s] routeSpecial set to true
+[05/15 21:08:19    77s] srouteBlockPin set to "useLef"
+[05/15 21:08:19    77s] srouteBottomLayerLimit set to 1
+[05/15 21:08:19    77s] srouteBottomTargetLayerLimit set to 1
+[05/15 21:08:19    77s] srouteConnectConverterPin set to false
+[05/15 21:08:19    77s] srouteCrossoverViaBottomLayer set to 1
+[05/15 21:08:19    77s] srouteCrossoverViaTopLayer set to 6
+[05/15 21:08:19    77s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[05/15 21:08:19    77s] srouteFollowCorePinEnd set to 3
+[05/15 21:08:19    77s] srouteJogControl set to "preferWithChanges differentLayer"
+[05/15 21:08:19    77s] sroutePadPinAllPorts set to true
+[05/15 21:08:19    77s] sroutePreserveExistingRoutes set to true
+[05/15 21:08:19    77s] srouteRoutePowerBarPortOnBothDir set to true
+[05/15 21:08:19    77s] srouteStopBlockPin set to "nearestTarget"
+[05/15 21:08:19    77s] srouteTopLayerLimit set to 6
+[05/15 21:08:19    77s] srouteTopTargetLayerLimit set to 6
+[05/15 21:08:19    77s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1519.00 megs.
+[05/15 21:08:19    77s] 
+[05/15 21:08:19    77s] Reading DB technology information...
+[05/15 21:08:19    77s] Finished reading DB technology information.
+[05/15 21:08:19    77s] Reading floorplan and netlist information...
+[05/15 21:08:19    77s] Finished reading floorplan and netlist information.
+[05/15 21:08:19    77s] Read in 12 layers, 6 routing layers, 0 overlap layer
+[05/15 21:08:19    77s] Read in 84 macros, 18 used
+[05/15 21:08:19    77s] Read in 18 components
+[05/15 21:08:19    77s]   18 core components: 18 unplaced, 0 placed, 0 fixed
+[05/15 21:08:19    77s] Read in 297 logical pins
+[05/15 21:08:19    77s] Read in 297 nets
+[05/15 21:08:19    77s] Read in 2 special nets, 2 routed
+[05/15 21:08:19    77s] Read in 36 terminals
+[05/15 21:08:19    77s] 2 nets selected.
+[05/15 21:08:19    77s] 
+[05/15 21:08:19    77s] Begin power routing ...
+[05/15 21:08:19    77s] Bad via found: M1_N
+[05/15 21:08:19    77s] Bad via found: M1_P
+[05/15 21:08:19    77s] Bad via found: M1_POLY
+[05/15 21:08:19    77s] Bad via found: NTAP
+[05/15 21:08:19    77s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect before power routing.
+[05/15 21:08:19    77s] **WARN: (IMPSR-1254):	Cannot find any block pin of net vdd!. Check netlist, or change option to include the pin.
+[05/15 21:08:19    77s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:08:19    77s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:08:19    77s] Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:08:19    77s] **WARN: (IMPSR-1254):	Cannot find any block pin of net gnd!. Check netlist, or change option to include the pin.
+[05/15 21:08:19    77s] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[05/15 21:08:19    77s] Type 'man IMPSR-1256' for more detail.
+[05/15 21:08:19    77s] Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[05/15 21:08:19    77s] CPU time for FollowPin 0 seconds
+[05/15 21:08:19    77s] CPU time for FollowPin 0 seconds
+[05/15 21:08:19    77s] Bad via found: M1_N
+[05/15 21:08:19    77s] Bad via found: M1_P
+[05/15 21:08:19    77s] Bad via found: M1_POLY
+[05/15 21:08:19    77s] Bad via found: NTAP
+[05/15 21:08:19    77s] **WARN: (IMPSR-1234):	Find 4 vias whose layer definition is incorrect after power routing.
+[05/15 21:08:19    77s]   Number of IO ports routed: 0
+[05/15 21:08:19    77s]   Number of Block ports routed: 0
+[05/15 21:08:19    77s]   Number of Stripe ports routed: 0
+[05/15 21:08:19    77s]   Number of Core ports routed: 0
+[05/15 21:08:19    77s]   Number of Pad ports routed: 0
+[05/15 21:08:19    77s]   Number of Power Bump ports routed: 0
+[05/15 21:08:19    77s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1519.00 megs.
+[05/15 21:08:19    77s] 
+[05/15 21:08:19    77s] 
+[05/15 21:08:19    77s] 
+[05/15 21:08:19    77s]  Begin updating DB with routing results ...
+[05/15 21:08:19    77s]  Updating DB with 14 via definition ...
+[05/15 21:08:19    77s] sroute: Total CPU time used = 0:0:0
+[05/15 21:08:19    77s] sroute: Total Real time used = 0:0:0
+[05/15 21:08:19    77s] sroute: Total Memory used = -0.25 megs
+[05/15 21:08:19    77s] sroute: Total Peak Memory used = 920.52 megs
+[05/15 21:09:08    79s] <CMD> setPlaceMode -fp false
+[05/15 21:09:08    79s] <CMD> placeDesign
+[05/15 21:09:08    79s] *** Starting placeDesign default flow ***
+[05/15 21:09:08    79s] **INFO: Enable pre-place timing setting for timing analysis
+[05/15 21:09:08    79s] Set Using Default Delay Limit as 101.
+[05/15 21:09:08    79s] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[05/15 21:09:08    79s] Set Default Net Delay as 0 ps.
+[05/15 21:09:08    79s] Set Default Net Load as 0 pF. 
+[05/15 21:09:08    79s] **INFO: Analyzing IO path groups for slack adjustment
+[05/15 21:09:08    80s] Effort level <high> specified for reg2reg_tmp.18402 path_group
+[05/15 21:09:08    80s] #################################################################################
+[05/15 21:09:08    80s] # Design Stage: PreRoute
+[05/15 21:09:08    80s] # Design Name: CacheController
+[05/15 21:09:08    80s] # Design Mode: 90nm
+[05/15 21:09:08    80s] # Analysis Mode: MMMC Non-OCV 
+[05/15 21:09:08    80s] # Parasitics Mode: No SPEF/RCDB
+[05/15 21:09:08    80s] # Signoff Settings: SI Off 
+[05/15 21:09:08    80s] #################################################################################
+[05/15 21:09:08    80s] Calculate delays in Single mode...
+[05/15 21:09:08    80s] Topological Sorting (CPU = 0:00:00.0, MEM = 936.0M, InitMEM = 934.3M)
+[05/15 21:09:08    80s] siFlow : Timing analysis mode is single, using late cdB files
+[05/15 21:09:10    81s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:01.0)
+[05/15 21:09:10    81s] End delay calculation. (MEM=1089.22 CPU=0:00:01.1 REAL=0:00:02.0)
+[05/15 21:09:10    81s] *** CDM Built up (cpu=0:00:01.4  real=0:00:02.0  mem= 1089.2M) ***
+[05/15 21:09:10    81s] *** Start deleteBufferTree ***
+[05/15 21:09:10    81s] Info: Detect buffers to remove automatically.
+[05/15 21:09:10    81s] Analyzing netlist ...
+[05/15 21:09:10    81s] All-RC-Corners-Per-Net-In-Memory is turned ON...
+[05/15 21:09:10    81s] Updating netlist
+[05/15 21:09:10    82s] 
+[05/15 21:09:10    82s] *summary: 188 instances (buffers/inverters) removed
+[05/15 21:09:10    82s] *** Finish deleteBufferTree (0:00:00.3) ***
+[05/15 21:09:10    82s] **INFO: Disable pre-place timing setting for timing analysis
+[05/15 21:09:10    82s] Set Using Default Delay Limit as 1000.
+[05/15 21:09:10    82s] Set Default Net Delay as 1000 ps.
+[05/15 21:09:10    82s] Set Default Net Load as 0.5 pF. 
+[05/15 21:09:10    82s] Deleted 0 physical inst  (cell - / prefix -).
+[05/15 21:09:10    82s] *** Starting "NanoPlace(TM) placement v#2 (mem=1081.2M)" ...
+[05/15 21:09:10    82s] **WARN: (IMPTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+[05/15 21:09:10    82s] Type 'man IMPTS-403' for more detail.
+[05/15 21:09:10    82s] *** Build Buffered Sizing Timing Model
+[05/15 21:09:10    82s] (cpu=0:00:00.0 mem=1081.2M) ***
+[05/15 21:09:10    82s] *** Build Virtual Sizing Timing Model
+[05/15 21:09:10    82s] (cpu=0:00:00.0 mem=1081.2M) ***
+[05/15 21:09:10    82s] Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+[05/15 21:09:10    82s] **WARN: (IMPSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored.
+[05/15 21:09:10    82s] Define the scan chains before using this option.
+[05/15 21:09:10    82s] Type 'man IMPSP-9042' for more detail.
+[05/15 21:09:10    82s] #std cell=10877 (0 fixed + 10877 movable) #block=0 (0 floating + 0 preplaced)
+[05/15 21:09:10    82s] #ioInst=0 #net=10978 #term=37776 #term/net=3.44, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=295
+[05/15 21:09:10    82s] stdCell: 10877 single + 0 double + 0 multi
+[05/15 21:09:10    82s] Total standard cell length = 81.2106 (mm), area = 0.9209 (mm^2)
+[05/15 21:09:10    82s] Core basic site is CoreSite
+[05/15 21:09:10    82s] Estimated cell power/ground rail width = 2.303 um
+[05/15 21:09:10    82s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[05/15 21:09:10    82s] Apply auto density screen in pre-place stage.
+[05/15 21:09:10    82s] Auto density screen increases utilization from 0.693 to 0.693
+[05/15 21:09:10    82s] Auto density screen runtime: cpu = 0:00:00.0 real = 0:00:00.0 mem = 1081.2M
+[05/15 21:09:10    82s] Average module density = 0.693.
+[05/15 21:09:10    82s] Density for the design = 0.693.
+[05/15 21:09:10    82s]        = stdcell_area 100260 sites (920928 um^2) / alloc_area 144700 sites (1329127 um^2).
+[05/15 21:09:10    82s] Pin Density = 0.2611.
+[05/15 21:09:10    82s]             = total # of pins 37776 / total area 144700.
+[05/15 21:09:10    82s] === lastAutoLevel = 8 
+[05/15 21:09:11    83s] Clock gating cells determined by native netlist tracing.
+[05/15 21:09:11    83s] Effort level <high> specified for reg2reg path_group
+[05/15 21:09:13    83s] Iteration  1: Total net bbox = 3.579e-08 (1.42e-08 2.16e-08)
+[05/15 21:09:13    83s]               Est.  stn bbox = 3.695e-08 (1.47e-08 2.22e-08)
+[05/15 21:09:13    83s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1099.2M
+[05/15 21:09:13    83s] Iteration  2: Total net bbox = 3.579e-08 (1.42e-08 2.16e-08)
+[05/15 21:09:13    83s]               Est.  stn bbox = 3.695e-08 (1.47e-08 2.22e-08)
+[05/15 21:09:13    83s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1099.2M
+[05/15 21:09:13    84s] Iteration  3: Total net bbox = 9.490e+02 (5.11e+02 4.38e+02)
+[05/15 21:09:13    84s]               Est.  stn bbox = 1.411e+03 (7.66e+02 6.44e+02)
+[05/15 21:09:13    84s]               cpu = 0:00:00.9 real = 0:00:00.0 mem = 1099.2M
+[05/15 21:09:13    84s] Total number of setup views is 1.
+[05/15 21:09:13    84s] Total number of active setup views is 1.
+[05/15 21:09:16    87s] Iteration  4: Total net bbox = 3.593e+05 (2.08e+05 1.51e+05)
+[05/15 21:09:16    87s]               Est.  stn bbox = 5.242e+05 (2.88e+05 2.37e+05)
+[05/15 21:09:16    87s]               cpu = 0:00:03.1 real = 0:00:03.0 mem = 1099.2M
+[05/15 21:09:20    90s] Iteration  5: Total net bbox = 3.893e+05 (2.18e+05 1.72e+05)
+[05/15 21:09:20    90s]               Est.  stn bbox = 6.139e+05 (3.22e+05 2.92e+05)
+[05/15 21:09:20    90s]               cpu = 0:00:03.2 real = 0:00:04.0 mem = 1099.2M
+[05/15 21:09:24    95s] Iteration  6: Total net bbox = 4.314e+05 (2.25e+05 2.07e+05)
+[05/15 21:09:24    95s]               Est.  stn bbox = 6.753e+05 (3.36e+05 3.40e+05)
+[05/15 21:09:24    95s]               cpu = 0:00:04.7 real = 0:00:04.0 mem = 1129.2M
+[05/15 21:09:25    95s] Initialize trialRoute multiThread mode= 16383 (=0x3fff) and nrThread= 0.
+[05/15 21:09:25    95s] enableMT= 3
+[05/15 21:09:25    95s] useHNameCompare= 3 (lazy mode)
+[05/15 21:09:25    95s] doMTMainInit= 1
+[05/15 21:09:25    95s] doMTFlushLazyWireDelete= 1
+[05/15 21:09:25    95s] useFastLRoute= 0
+[05/15 21:09:25    95s] useFastCRoute= 1
+[05/15 21:09:25    95s] doMTNetInitAdjWires= 1
+[05/15 21:09:25    95s] wireMPoolNoThreadCheck= 1
+[05/15 21:09:25    95s] allMPoolNoThreadCheck= 1
+[05/15 21:09:25    95s] doNotUseMPoolInCRoute= 1
+[05/15 21:09:25    95s] doMTSprFixZeroViaCodes= 1
+[05/15 21:09:25    95s] doMTDtrRoute1CleanupA= 1
+[05/15 21:09:25    95s] doMTDtrRoute1CleanupB= 1
+[05/15 21:09:25    95s] doMTWireLenCalc= 0
+[05/15 21:09:25    95s] doSkipQALenRecalc= 1
+[05/15 21:09:25    95s] doMTMainCleanup= 1
+[05/15 21:09:25    95s] doMTMoveCellTermsToMSLayer= 1
+[05/15 21:09:25    95s] doMTConvertWiresToNewViaCode= 1
+[05/15 21:09:25    95s] doMTRemoveAntenna= 1
+[05/15 21:09:25    95s] doMTCheckConnectivity= 1
+[05/15 21:09:25    95s] enableRuntimeLog= 0
+[05/15 21:09:25    95s] Congestion driven padding in post-place stage.
+[05/15 21:09:25    95s] Congestion driven padding increases utilization from 0.821 to 0.821
+[05/15 21:09:25    95s] Congestion driven padding runtime: cpu = 0:00:00.0 real = 0:00:00.0 mem = 1129.2M
+[05/15 21:09:26    96s] Iteration  7: Total net bbox = 5.104e+05 (2.83e+05 2.28e+05)
+[05/15 21:09:26    96s]               Est.  stn bbox = 7.550e+05 (3.95e+05 3.60e+05)
+[05/15 21:09:26    96s]               cpu = 0:00:01.5 real = 0:00:02.0 mem = 1129.2M
+[05/15 21:09:27    98s] nrCritNet: 0.00% ( 0 / 10978 ) cutoffSlk: 214748364.7ps stdDelay: 36.6ps
+[05/15 21:09:28    99s] nrCritNet: 0.00% ( 0 / 10978 ) cutoffSlk: 214748364.7ps stdDelay: 36.6ps
+[05/15 21:09:28    99s] Iteration  8: Total net bbox = 5.104e+05 (2.83e+05 2.28e+05)
+[05/15 21:09:28    99s]               Est.  stn bbox = 7.550e+05 (3.95e+05 3.60e+05)
+[05/15 21:09:28    99s]               cpu = 0:00:02.1 real = 0:00:02.0 mem = 1129.2M
+[05/15 21:09:32   103s] Initialize trialRoute multiThread mode= 16383 (=0x3fff) and nrThread= 0.
+[05/15 21:09:32   103s] Congestion driven padding in post-place stage.
+[05/15 21:09:32   103s] Congestion driven padding increases utilization from 0.821 to 0.821
+[05/15 21:09:32   103s] Congestion driven padding runtime: cpu = 0:00:00.0 real = 0:00:00.0 mem = 1129.2M
+[05/15 21:09:33   104s] Iteration  9: Total net bbox = 5.183e+05 (2.80e+05 2.38e+05)
+[05/15 21:09:33   104s]               Est.  stn bbox = 7.772e+05 (4.02e+05 3.75e+05)
+[05/15 21:09:33   104s]               cpu = 0:00:05.1 real = 0:00:05.0 mem = 1129.2M
+[05/15 21:09:34   105s] nrCritNet: 0.00% ( 0 / 10978 ) cutoffSlk: 214748364.7ps stdDelay: 36.6ps
+[05/15 21:09:35   106s] nrCritNet: 0.00% ( 0 / 10978 ) cutoffSlk: 214748364.7ps stdDelay: 36.6ps
+[05/15 21:09:35   106s] Iteration 10: Total net bbox = 5.183e+05 (2.80e+05 2.38e+05)
+[05/15 21:09:35   106s]               Est.  stn bbox = 7.772e+05 (4.02e+05 3.75e+05)
+[05/15 21:09:35   106s]               cpu = 0:00:02.1 real = 0:00:02.0 mem = 1129.2M
+[05/15 21:09:45   116s] Iteration 11: Total net bbox = 5.690e+05 (3.01e+05 2.68e+05)
+[05/15 21:09:45   116s]               Est.  stn bbox = 8.253e+05 (4.22e+05 4.03e+05)
+[05/15 21:09:45   116s]               cpu = 0:00:09.8 real = 0:00:10.0 mem = 1129.2M
+[05/15 21:09:45   116s] Iteration 12: Total net bbox = 5.690e+05 (3.01e+05 2.68e+05)
+[05/15 21:09:45   116s]               Est.  stn bbox = 8.253e+05 (4.22e+05 4.03e+05)
+[05/15 21:09:45   116s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1129.2M
+[05/15 21:09:45   116s] Iteration 13: Total net bbox = 5.690e+05 (3.01e+05 2.68e+05)
+[05/15 21:09:45   116s]               Est.  stn bbox = 8.253e+05 (4.22e+05 4.03e+05)
+[05/15 21:09:45   116s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1129.2M
+[05/15 21:09:45   116s] *** cost = 5.690e+05 (3.01e+05 2.68e+05) (cpu for global=0:00:33.0) real=0:00:34.0***
+[05/15 21:09:45   116s] Info: 0 clock gating cells identified, 0 (on average) moved
+[05/15 21:09:45   116s] Core Placement runtime cpu: 0:00:28.1 real: 0:00:28.0
+[05/15 21:09:45   116s] **WARN: (IMPSP-9025):	No scan chain specified/traced.
+[05/15 21:09:45   116s] Type 'man IMPSP-9025' for more detail.
+[05/15 21:09:45   116s] #spOpts: mergeVia=F 
+[05/15 21:09:45   116s] Core basic site is CoreSite
+[05/15 21:09:45   116s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[05/15 21:09:45   116s] *** Starting refinePlace (0:01:56 mem=1069.3M) ***
+[05/15 21:09:45   116s] Total net length = 5.699e+05 (3.012e+05 2.686e+05) (ext = 5.330e+04)
+[05/15 21:09:45   116s] Starting refinePlace ...
+[05/15 21:09:45   116s] Move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+[05/15 21:09:45   116s] default core: bins with density >  0.75 = 5.45 % ( 6 / 110 )
+[05/15 21:09:45   116s] Density distribution unevenness ratio = 2.780%
+[05/15 21:09:45   116s]   Spread Effort: high, pre-route mode, useDDP on.
+[05/15 21:09:45   116s] [CPU] RefinePlace/preRPlace (cpu=0:00:00.1, real=0:00:00.0, mem=1069.3MB) @(0:01:56 - 0:01:56).
+[05/15 21:09:45   116s] Move report: preRPlace moves 10877 insts, mean move: 3.31 um, max move: 14.31 um
+[05/15 21:09:45   116s] 	Max move on inst (U15350): (356.54, 346.55) --> (363.69, 339.39)
+[05/15 21:09:45   116s] 	Length: 4 sites, height: 1 rows, site name: CoreSite, cell type: nand2_1
+[05/15 21:09:45   116s] wireLenOptFixPriorityInst 0 inst fixed
+[05/15 21:09:45   116s] Placement tweakage begins.
+[05/15 21:09:46   116s] wire length = 8.592e+05
+[05/15 21:09:46   117s] wire length = 8.343e+05
+[05/15 21:09:46   117s] Placement tweakage ends.
+[05/15 21:09:46   117s] Move report: tweak moves 2793 insts, mean move: 10.48 um, max move: 51.03 um
+[05/15 21:09:46   117s] 	Max move on inst (U8263): (1133.19, 668.25) --> (1093.50, 656.91)
+[05/15 21:09:46   117s] [CPU] RefinePlace/TweakPlacement (cpu=0:00:01.0, real=0:00:01.0, mem=1070.8MB) @(0:01:56 - 0:01:57).
+[05/15 21:09:47   117s] Move report: legalization moves 13 insts, mean move: 4.92 um, max move: 12.96 um
+[05/15 21:09:47   117s] 	Max move on inst (U11700): (228.42, 225.99) --> (215.46, 225.99)
+[05/15 21:09:47   117s] [CPU] RefinePlace/Legalization (cpu=0:00:00.1, real=0:00:01.0, mem=1070.8MB) @(0:01:57 - 0:01:57).
+[05/15 21:09:47   117s] Move report: Detail placement moves 10877 insts, mean move: 5.61 um, max move: 48.50 um
+[05/15 21:09:47   117s] 	Max move on inst (U7968): (791.52, 812.38) --> (836.73, 815.67)
+[05/15 21:09:47   117s] 	Runtime: CPU: 0:00:01.2 REAL: 0:00:02.0 MEM: 1070.8MB
+[05/15 21:09:47   117s] Statistics of distance of Instance movement in refine placement:
+[05/15 21:09:47   117s]   maximum (X+Y) =        48.50 um
+[05/15 21:09:47   117s]   inst (U7968) with max move: (791.524, 812.381) -> (836.73, 815.67)
+[05/15 21:09:47   117s]   mean    (X+Y) =         5.61 um
+[05/15 21:09:47   117s] Total instances flipped for WireLenOpt: 593
+[05/15 21:09:47   117s] Summary Report:
+[05/15 21:09:47   117s] Instances move: 10877 (out of 10877 movable)
+[05/15 21:09:47   117s] Mean displacement: 5.61 um
+[05/15 21:09:47   117s] Max displacement: 48.50 um (Instance: U7968) (791.524, 812.381) -> (836.73, 815.67)
+[05/15 21:09:47   117s] 	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: inv_1
+[05/15 21:09:47   117s] Total instances moved : 10877
+[05/15 21:09:47   117s] Total net length = 5.579e+05 (2.853e+05 2.726e+05) (ext = 5.340e+04)
+[05/15 21:09:47   117s] Runtime: CPU: 0:00:01.2 REAL: 0:00:02.0 MEM: 1070.8MB
+[05/15 21:09:47   117s] [CPU] RefinePlace/total (cpu=0:00:01.2, real=0:00:02.0, mem=1070.8MB) @(0:01:56 - 0:01:57).
+[05/15 21:09:47   117s] *** Finished refinePlace (0:01:57 mem=1070.8M) ***
+[05/15 21:09:47   117s] Total net length = 5.553e+05 (2.834e+05 2.719e+05) (ext = 5.353e+04)
+[05/15 21:09:47   117s] *** End of Placement (cpu=0:00:35.5, real=0:00:37.0, mem=1070.8M) ***
+[05/15 21:09:47   117s] #spOpts: mergeVia=F 
+[05/15 21:09:47   117s] Core basic site is CoreSite
+[05/15 21:09:47   117s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[05/15 21:09:47   117s] default core: bins with density >  0.75 = 7.27 % ( 8 / 110 )
+[05/15 21:09:47   117s] Density distribution unevenness ratio = 2.783%
+[05/15 21:09:47   117s] *** Free Virtual Timing Model ...(mem=1070.8M)
+[05/15 21:09:47   117s] Starting IO pin assignment...
+[05/15 21:09:47   117s] The design is not routed. Using flight-line based method for pin assignment.
+[05/15 21:09:47   117s] Completed IO pin assignment.
+[05/15 21:09:47   117s] Starting congestion repair ...
+[05/15 21:09:47   117s] congRepair options: -clkGateAware 1 -rplaceIncrNPClkGateAwareMode 4.
+[05/15 21:09:47   117s] (I)       Reading DB...
+[05/15 21:09:47   117s] (I)       congestionReportName   : 
+[05/15 21:09:47   117s] [NR-eagl] buildTerm2TermWires    : 1
+[05/15 21:09:47   117s] [NR-eagl] doTrackAssignment      : 1
+[05/15 21:09:47   117s] (I)       dumpBookshelfFiles     : 0
+[05/15 21:09:47   117s] [NR-eagl] numThreads             : 1
+[05/15 21:09:47   117s] [NR-eagl] honorMsvRouteConstraint: false
+[05/15 21:09:47   117s] (I)       honorPin               : false
+[05/15 21:09:47   117s] (I)       honorPinGuide          : true
+[05/15 21:09:47   117s] (I)       honorPartition         : false
+[05/15 21:09:47   117s] (I)       allowPartitionCrossover: false
+[05/15 21:09:47   117s] (I)       honorSingleEntry       : true
+[05/15 21:09:47   117s] (I)       honorSingleEntryStrong : true
+[05/15 21:09:47   117s] (I)       handleViaSpacingRule   : false
+[05/15 21:09:47   117s] (I)       PDConstraint           : none
+[05/15 21:09:47   117s] [NR-eagl] honorClockSpecNDR      : 0
+[05/15 21:09:47   117s] (I)       routingEffortLevel     : 3
+[05/15 21:09:47   117s] [NR-eagl] minRouteLayer          : 2
+[05/15 21:09:47   117s] [NR-eagl] maxRouteLayer          : 2147483647
+[05/15 21:09:47   117s] (I)       numRowsPerGCell        : 1
+[05/15 21:09:47   117s] (I)       speedUpLargeDesign     : 0
+[05/15 21:09:47   117s] (I)       speedUpBlkViolationClean: 0
+[05/15 21:09:47   117s] (I)       autoGCellMerging       : 1
+[05/15 21:09:47   117s] (I)       multiThreadingTA       : 0
+[05/15 21:09:47   117s] (I)       punchThroughDistance   : -1
+[05/15 21:09:47   117s] (I)       blockedPinEscape       : 0
+[05/15 21:09:47   117s] (I)       blkAwareLayerSwitching : 0
+[05/15 21:09:47   117s] (I)       betterClockWireModeling: 0
+[05/15 21:09:47   117s] (I)       scenicBound            : 1.15
+[05/15 21:09:47   117s] (I)       maxScenicToAvoidBlk    : 100.00
+[05/15 21:09:47   117s] (I)       source-to-sink ratio   : 0.00
+[05/15 21:09:47   117s] (I)       targetCongestionRatio  : 1.00
+[05/15 21:09:47   117s] (I)       layerCongestionRatio   : 0.70
+[05/15 21:09:47   117s] (I)       m1CongestionRatio      : 0.10
+[05/15 21:09:47   117s] (I)       m2m3CongestionRatio    : 0.70
+[05/15 21:09:47   117s] (I)       pinAccessEffort        : 0.10
+[05/15 21:09:47   117s] (I)       localRouteEffort       : 1.00
+[05/15 21:09:47   117s] (I)       numSitesBlockedByOneVia: 8.00
+[05/15 21:09:47   117s] (I)       supplyScaleFactorH     : 1.00
+[05/15 21:09:47   117s] (I)       supplyScaleFactorV     : 1.00
+[05/15 21:09:47   117s] (I)       highlight3DOverflowFactor: 0.00
+[05/15 21:09:47   117s] (I)       skipTrackCommand             : 
+[05/15 21:09:47   117s] (I)       readTROption           : true
+[05/15 21:09:47   117s] (I)       extraSpacingBothSide   : false
+[05/15 21:09:47   117s] [NR-eagl] numTracksPerClockWire  : 0
+[05/15 21:09:47   117s] (I)       routeSelectedNetsOnly  : false
+[05/15 21:09:47   117s] (I)       before initializing RouteDB syMemory usage = 1079.8 MB
+[05/15 21:09:47   117s] (I)       starting read tracks
+[05/15 21:09:47   117s] (I)       build grid graph
+[05/15 21:09:47   117s] (I)       build grid graph start
+[05/15 21:09:47   117s] [NR-eagl] Layer1 has no routable track
+[05/15 21:09:47   117s] [NR-eagl] Layer2 has single uniform track structure
+[05/15 21:09:47   117s] [NR-eagl] Layer3 has single uniform track structure
+[05/15 21:09:47   117s] [NR-eagl] Layer4 has single uniform track structure
+[05/15 21:09:47   117s] [NR-eagl] Layer5 has single uniform track structure
+[05/15 21:09:47   117s] [NR-eagl] Layer6 has single uniform track structure
+[05/15 21:09:47   117s] (I)       build grid graph end
+[05/15 21:09:47   117s] (I)       Layer1   numNetMinLayer=10978
+[05/15 21:09:47   117s] (I)       Layer2   numNetMinLayer=0
+[05/15 21:09:47   117s] (I)       Layer3   numNetMinLayer=0
+[05/15 21:09:47   117s] (I)       Layer4   numNetMinLayer=0
+[05/15 21:09:47   117s] (I)       Layer5   numNetMinLayer=0
+[05/15 21:09:47   117s] (I)       Layer6   numNetMinLayer=0
+[05/15 21:09:47   117s] [NR-eagl] numViaLayers=5
+[05/15 21:09:47   117s] (I)       end build via table
+[05/15 21:09:47   117s] [NR-eagl] numRoutingBlks=0 numInstBlks=8977 numPGBlocks=214 numBumpBlks=0 numBoundaryFakeBlks=0
+[05/15 21:09:47   117s] [NR-eagl] numPreroutedNet = 0  numPreroutedWires = 0
+[05/15 21:09:47   117s] (I)       num ignored nets =0
+[05/15 21:09:47   117s] (I)       readDataFromPlaceDB
+[05/15 21:09:47   117s] (I)       Read net information..
+[05/15 21:09:47   117s] [NR-eagl] Read numTotalNets=10978  numIgnoredNets=0
+[05/15 21:09:47   117s] (I)       Read testcase time = 0.000 seconds
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] (I)       totalGlobalPin=33300, totalPins=37776
+[05/15 21:09:47   117s] (I)       Model blockage into capacity
+[05/15 21:09:47   117s] (I)       Read numBlocks=89547  numPreroutedWires=0  numCapScreens=0
+[05/15 21:09:47   117s] (I)       blocked area on Layer1 : 0  (0.00%)
+[05/15 21:09:47   117s] (I)       blocked area on Layer2 : 2944466077050  (213.66%)
+[05/15 21:09:47   117s] (I)       blocked area on Layer3 : 0  (0.00%)
+[05/15 21:09:47   117s] (I)       blocked area on Layer4 : 0  (0.00%)
+[05/15 21:09:47   117s] (I)       blocked area on Layer5 : 0  (0.00%)
+[05/15 21:09:47   117s] (I)       blocked area on Layer6 : 0  (0.00%)
+[05/15 21:09:47   117s] (I)       Modeling time = 0.010 seconds
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] [NR-eagl] There are 1 clock nets ( 0 with NDR ).
+[05/15 21:09:47   117s] (I)       Before initializing earlyGlobalRoute syMemory usage = 1084.6 MB
+[05/15 21:09:47   117s] (I)       Layer1  viaCost=200.00
+[05/15 21:09:47   117s] (I)       Layer2  viaCost=100.00
+[05/15 21:09:47   117s] (I)       Layer3  viaCost=100.00
+[05/15 21:09:47   117s] (I)       Layer4  viaCost=100.00
+[05/15 21:09:47   117s] (I)       Layer5  viaCost=300.00
+[05/15 21:09:47   117s] (I)       ---------------------Grid Graph Info--------------------
+[05/15 21:09:47   117s] (I)       routing area        :  (0, 0) - (1193130, 1155060)
+[05/15 21:09:47   117s] (I)       core area           :  (10530, 10530) - (1182600, 1144530)
+[05/15 21:09:47   117s] (I)       Site Width          :   810  (dbu)
+[05/15 21:09:47   117s] (I)       Row Height          : 11340  (dbu)
+[05/15 21:09:47   117s] (I)       GCell Width         : 11340  (dbu)
+[05/15 21:09:47   117s] (I)       GCell Height        : 11340  (dbu)
+[05/15 21:09:47   117s] (I)       grid                :   105   101     6
+[05/15 21:09:47   117s] (I)       vertical capacity   :     0 11340     0 11340     0 11340
+[05/15 21:09:47   117s] (I)       horizontal capacity :     0     0 11340     0 11340     0
+[05/15 21:09:47   117s] (I)       Default wire width  :   270   270   270   270   360   450
+[05/15 21:09:47   117s] (I)       Default wire space  :   270   360   360   360   360   450
+[05/15 21:09:47   117s] (I)       Default pitch size  :   540   810   810   810   810  1215
+[05/15 21:09:47   117s] (I)       First Track Coord   :     0   810   810   810   810   810
+[05/15 21:09:47   117s] (I)       Num tracks per GCell:  0.00 14.00 14.00 14.00 14.00  9.33
+[05/15 21:09:47   117s] (I)       Total num of tracks :     0  1472  1425  1472  1425   982
+[05/15 21:09:47   117s] (I)       Num of masks        :     1     1     1     1     1     1
+[05/15 21:09:47   117s] (I)       --------------------------------------------------------
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] (I)       After initializing earlyGlobalRoute syMemory usage = 1084.6 MB
+[05/15 21:09:47   117s] (I)       Loading and dumping file time : 0.06 seconds
+[05/15 21:09:47   117s] (I)       ============= Initialization =============
+[05/15 21:09:47   117s] [NR-eagl] EstWL : 70361
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] (I)       total 2D Cap : 606998 = (299250 H, 307748 V)
+[05/15 21:09:47   117s] (I)       botLay=Layer1  topLay=Layer6  numSeg=24034
+[05/15 21:09:47   117s] (I)       ============  Phase 1a Route ============
+[05/15 21:09:47   117s] (I)       Phase 1a runs 0.01 seconds
+[05/15 21:09:47   117s] [NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[05/15 21:09:47   117s] [NR-eagl] 
+[05/15 21:09:47   117s] (I)       ============  Phase 1b Route ============
+[05/15 21:09:47   117s] [NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[05/15 21:09:47   117s] [NR-eagl] 
+[05/15 21:09:47   117s] [NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] (I)       ============  Phase 1c Route ============
+[05/15 21:09:47   117s] [NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[05/15 21:09:47   117s] [NR-eagl] 
+[05/15 21:09:47   117s] (I)       ============  Phase 1d Route ============
+[05/15 21:09:47   117s] [NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[05/15 21:09:47   117s] [NR-eagl] 
+[05/15 21:09:47   117s] (I)       ============  Phase 1e Route ============
+[05/15 21:09:47   117s] (I)       Phase 1e runs 0.00 seconds
+[05/15 21:09:47   117s] [NR-eagl] Usage: 70361 = (36901 H, 33460 V) = (12.33% H, 11.18% V) = (4.185e+05um H, 3.794e+05um V)
+[05/15 21:09:47   117s] [NR-eagl] 
+[05/15 21:09:47   117s] [NR-eagl] earlyGlobalRoute overflow: 0.00% H + 0.00% V
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] (I)       ============  Phase 1l Route ============
+[05/15 21:09:47   117s] (I)       dpBasedLA: time=0.01  totalOF=1369312  totalVia=70750  totalWL=70358  total(Via+WL)=141108 
+[05/15 21:09:47   117s] (I)       Total Global Routing Runtime: 0.05 seconds
+[05/15 21:09:47   117s] [NR-eagl] Overflow after earlyGlobalRoute (GR compatible) 0.00% H + 0.00% V
+[05/15 21:09:47   117s] [NR-eagl] Overflow after earlyGlobalRoute 0.00% H + 0.00% V
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+[05/15 21:09:47   117s] Local HotSpot Analysis: normalized congestion hotspot area = 0.00/0.00 (max/total hotspot). One area unit = 1 square bin with side length equal to 4 std-cell rows.
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] ** np local hotspot detection info verbose **
+[05/15 21:09:47   117s] level 0: max group area = 0.00 (0.00%) total group area = 0.00 (0.00%) threshold area = 88.00 (area is in unit of 4 std-cell row bins)
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] describeCongestion: hCong = 0.00 vCong = 0.00
+[05/15 21:09:47   117s] Skipped repairing congestion.
+[05/15 21:09:47   117s] (I)       ============= track Assignment ============
+[05/15 21:09:47   117s] (I)       extract Global 3D Wires
+[05/15 21:09:47   117s] (I)       Extract Global WL : time=0.00
+[05/15 21:09:47   117s] (I)       Initialize Greedy Track Assignment (maxPinLayer=Layer7, numCutBoxes=0)
+[05/15 21:09:47   117s] (I)       track assignment initialization runtime=1016 millisecond
+[05/15 21:09:47   117s] (I)       #threads=1 for track assignment
+[05/15 21:09:47   117s] (I)       track assignment kernel runtime=99900 millisecond
+[05/15 21:09:47   117s] (I)       End Greedy Track Assignment
+[05/15 21:09:47   117s] [NR-eagl] Layer1(metal1)(F) length: 0.000000e+00um, number of vias: 37481
+[05/15 21:09:47   117s] [NR-eagl] Layer2(metal2)(V) length: 1.821334e+05um, number of vias: 51248
+[05/15 21:09:47   117s] [NR-eagl] Layer3(metal3)(H) length: 4.359153e+05um, number of vias: 11312
+[05/15 21:09:47   117s] [NR-eagl] Layer4(metal4)(V) length: 2.217942e+05um, number of vias: 130
+[05/15 21:09:47   117s] [NR-eagl] Layer5(metal5)(H) length: 6.530220e+03um, number of vias: 9
+[05/15 21:09:47   117s] [NR-eagl] Layer6(metal6)(V) length: 2.178900e+02um, number of vias: 0
+[05/15 21:09:47   117s] [NR-eagl] Total length: 8.465909e+05um, number of vias: 100180
+[05/15 21:09:47   117s] End of congRepair (cpu=0:00:00.3, real=0:00:00.0)
+[05/15 21:09:47   117s] *** Finishing placeDesign default flow ***
+[05/15 21:09:47   117s] **placeDesign ... cpu = 0: 0:38, real = 0: 0:39, mem = 1074.9M **
+[05/15 21:09:47   117s] 
+[05/15 21:09:47   117s] *** Summary of all messages that are not suppressed in this session:
+[05/15 21:09:47   117s] Severity  ID               Count  Summary                                  
+[05/15 21:09:47   117s] WARNING   IMPTS-403            1  Delay calculation was forced to extrapol...
+[05/15 21:09:47   117s] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[05/15 21:09:47   117s] WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+[05/15 21:09:47   117s] WARNING   IMPSP-9042           1  Scan chains were not defined, -ignoreSca...
+[05/15 21:09:47   117s] *** Message Summary: 4 warning(s), 0 error(s)
+[05/15 21:09:47   117s] 
+[05/15 21:10:08   119s] <CMD> selectInst {cache_data_A_reg[1][68]}
+[05/15 21:11:16   122s] <CMD> deselectAll
+[05/15 21:11:18   123s] 
+[05/15 21:11:18   123s] *** Memory Usage v#1 (Current mem = 1076.949M, initial mem = 164.594M) ***
+[05/15 21:11:18   123s] 
+[05/15 21:11:18   123s] *** Summary of all messages that are not suppressed in this session:
+[05/15 21:11:18   123s] Severity  ID               Count  Summary                                  
+[05/15 21:11:18   123s] WARNING   IMPLF-108            1  There is no overlap layer defined in any...
+[05/15 21:11:18   123s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[05/15 21:11:18   123s] WARNING   IMPTS-403            1  Delay calculation was forced to extrapol...
+[05/15 21:11:18   123s] WARNING   IMPEXT-2766          6  The sheet resistance for layer %s is not...
+[05/15 21:11:18   123s] WARNING   IMPEXT-2773          6  The via resistance between layers %s and...
+[05/15 21:11:18   123s] WARNING   IMPVL-159          166  Pin '%s' of cell '%s' is defined in LEF ...
+[05/15 21:11:18   123s] WARNING   IMPDC-1629           1  The default delay limit was set to %d. T...
+[05/15 21:11:18   123s] WARNING   IMPSR-386            4  %d wire%s and %d via%s of shape %s of ne...
+[05/15 21:11:18   123s] WARNING   IMPSR-1234          14  Find %d vias whose layer definition is i...
+[05/15 21:11:18   123s] WARNING   IMPSR-1254          14  Cannot find any block pin of net %s. Che...
+[05/15 21:11:18   123s] WARNING   IMPSR-1256          14  Cannot find any CORE class pad pin of ne...
+[05/15 21:11:18   123s] WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+[05/15 21:11:18   123s] WARNING   IMPSP-9042           1  Scan chains were not defined, -ignoreSca...
+[05/15 21:11:18   123s] *** Message Summary: 230 warning(s), 0 error(s)
+[05/15 21:11:18   123s] 
+[05/15 21:11:18   123s] --- Ending "Innovus" (totcpu=0:02:03, real=0:23:03, mem=1076.9M) ---

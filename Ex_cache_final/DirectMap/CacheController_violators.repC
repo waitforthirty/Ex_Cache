@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : CacheController
+Version: J-2014.09-SP3
+Date   : Sun May 14 20:22:04 2017
+****************************************
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   CacheController              0.00           0.01          -0.01  (VIOLATED)
+
+
+1

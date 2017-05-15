@@ -1,0 +1,118 @@
+0 
+27
++itf+/opt/synopsys/vcs-mx_vJ-2014.12/amd64/lib/vcsdp.tab
++lint=all,noVCDE
++v2k
++vcsd
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/opt/synopsys/vcs-mx_vJ-2014.12/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=
+-Mobjects= /opt/synopsys/vcs-mx_vJ-2014.12/amd64/lib/libvirsim.so /opt/synopsys/vcs-mx_vJ-2014.12/amd64/lib/liberrorinf.so /opt/synopsys/vcs-mx_vJ-2014.12/amd64/lib/libsnpsmalloc.so
+-Mout=simv1
+-Msaverestoreobj=/opt/synopsys/vcs-mx_vJ-2014.12/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-full64
+-gen_obj
+-o simv1
+-picarchive
+-pp_used
+-timescale=1ns/10ps
+/opt/synopsys/vcs-mx_vJ-2014.12/amd64/bin/vcs1
+CacheController.v
+CacheController_tb1.v
+77
+sysc_uni_pwd=/home/lgy/Desktop/Ex_cache/TwoWayAssociative
+XMODIFIERS=@im=none
+XILINX_VIVADO=/opt/Xilinx//Vivado/2016.4
+XILINX_PLANAHEAD=/opt/Xilinx/14.7/ISE_DS/PlanAhead
+XILINX_EDK=/opt/Xilinx/14.7/ISE_DS/EDK
+XILINX_DSP=/opt/Xilinx/14.7/ISE_DS/ISE
+XILINXD_LICENSE_FILE=27020@127.0.0.1
+XILINX=/opt/Xilinx/14.7/ISE_DS/ISE
+XERCESCROOT=/opt/essentials/xerces-c-3.1.1
+XDG_SESSION_COOKIE=1c9aec88e65a5f13baf2ce8e0000001a-1487918311.21424-2080066079
+VNCDESKTOP=Orgrimmar:36 (lgy)
+VMR_MODE_FLAG=64
+VERDI_HOME=/opt/synopsys/verdi_vK-2015.09
+VERA_HOME=/opt/synopsys/vera_vI-2014.03/vera_vI-2014.03_amd64
+VC_STATIC_HOME=/opt/synopsys/vc_static_vJ-2014.12
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/opt/synopsys/vcs-mx_vJ-2014.12
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=amd64
+UNAME=/bin/uname
+TOOL_HOME=/opt/synopsys/vcs-mx_vJ-2014.12/amd64
+SYSFONT=latarcyrheb-sun16
+STARRC_HOME=/opt/synopsys/starrc_vI-2013.12-SP3-2
+SSH_AUTH_SOCK=/tmp/keyring-0O9DEk/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=14442
+SPYGLASS_HOME=/opt/SpyGlass/SpyGlass-5.6.0.4/SPYGLASS_HOME/
+SNPSLMD_LICENSE_FILE=27005@127.0.0.1:/opt/synopsys/vcs-mx_vJ-2014.12/flexlm//license.dat
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/14437,unix/unix:/tmp/.ICE-unix/14437
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=xim
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PT_HOME=/opt/synopsys/pts_vK-2015.06
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-lgy
+OPENCL_VENDOR_PATH=/opt/AMDAPPSDK-3.0-0-Beta/etc/OpenCL/vendors/
+MW_HOME=/opt/synopsys/mw_vJ-2014.09-SP3
+MGLS_LICENSE_FILE=27001@127.0.0.1
+MFLAGS=
+MATLAB_HOME=/opt/MATLAB/R2014b
+MAKELEVEL=1
+MAKEFLAGS=
+LMC_HOME=/opt/Xilinx/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64
+LIBRARY_PATH=:/lib:/opt/apache/Xalan-C_1_10_0-redhat_AS4-gcc_343/lib:/opt/apache/xerces-c-redhat_AS4-gcc_343/lib
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LEDA_PATH=/opt/synopsys/leda_vI-2014.03-SP1
+LC_ALL=C
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+ICC_HOME=/opt/synopsys/icc_vJ-2014.09-SP3
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/lgy/.gtkrc-1.2-gnome2
+GTK_IM_MODULE=gtk-im-context-simple
+GNOME_KEYRING_SOCKET=/tmp/keyring-0O9DEk/socket
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+FM_HOME=/opt/synopsys/fm_vJ-2014.09-SP3
+DESIGNWARE_HOME=/opt/synopsys/dw
+DC_HOME=/opt/synopsys/syn_vJ-2014.09-SP3
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-msMHeEvpGK,guid=740a035535c84239cee6c7c000000074
+CoreTools_HOME=/opt/synopsys/coretools_vI-2014.03
+CVS_RSH=ssh
+CT_64BIT=64
+COLORTERM=gnome-terminal
+CDS_LIC_FILE=27090@localhost
+CALIBRE_HOME=/opt/mentor/calibre/calibre_install/aoi_cal_2015.2_36.27
+ATRENTA_LICENSE_FILE=27010@127.0.0.1
+ARMLMD_LICENSE_FILE=:/opt/ARM/arm-amba.dat
+AMDAPPSDKROOT=/opt/AMDAPPSDK-3.0-0-Beta
+AD_TOOL_HOME=/opt/ARM/AMBADesigner_r3p0/AMBADesigner
+AD_HOME=/opt/ARM/AMBADesigner_r3p0
+0
+3
+1490338199 CacheController_tb1.v
+1494837768 CacheController.v
+1416630894 /opt/synopsys/vcs-mx_vJ-2014.12/amd64/lib/vcsdp.tab
+4
+0 
+1416631535 /opt/synopsys/vcs-mx_vJ-2014.12/amd64/lib/libvirsim.so
+1416631077 /opt/synopsys/vcs-mx_vJ-2014.12/amd64/lib/liberrorinf.so
+1416631067 /opt/synopsys/vcs-mx_vJ-2014.12/amd64/lib/libsnpsmalloc.so
+1494851507 simv1.daidir

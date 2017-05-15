@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CacheController
+Version: J-2014.09-SP3
+Date   : Mon May 15 20:36:55 2017
+****************************************
+
+
+Library(s) Used:
+
+    vtvt_tsmc180 (File: /home/lgy/Desktop/Ex_cache/DirectMap/Synopsys_Libraries/libs/vtvt_tsmc180.db)
+
+
+Operating Conditions: nom_pvt   Library: vtvt_tsmc180
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =   5.0328 mW   (98%)
+  Net Switching Power  = 126.1907 uW    (2%)
+                         ---------
+Total Dynamic Power    =   5.1590 mW  (100%)
+
+Cell Leakage Power     =   6.4431 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           4.9613        8.2966e-03        6.1839e-03            4.9758  (  96.33%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  7.1405e-02            0.1179        2.5926e-04            0.1896  (   3.67%)
+--------------------------------------------------------------------------------------------------
+Total              5.0327 mW         0.1262 mW     6.4431e-03 mW         5.1654 mW
+1

@@ -1,0 +1,41 @@
+{
+    "NameTable": {
+        "CacheController_tb1": [
+            "CacheController_tb1",
+            "bVPqF",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "Misc": {
+        "cwd": "/home/lgy/Desktop/Ex_cache/TwoWayAssociative",
+        "csrc_abs": "/home/lgy/Desktop/Ex_cache/TwoWayAssociative/csrc",
+        "csrc": "csrc",
+        "daidir": "/home/lgy/Desktop/Ex_cache/TwoWayAssociative/simv1.daidir",
+        "archive_dir": "archive.0",
+        "daidir_abs": "/home/lgy/Desktop/Ex_cache/TwoWayAssociative/simv1.daidir",
+        "default_output_dir": "csrc"
+    },
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 67891
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "CacheController_tb1"
+    ],
+    "PEModules": [],
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStatus": "Successful",
+    "CompileProcesses": [
+        "cgproc.145608.json"
+    ]
+}

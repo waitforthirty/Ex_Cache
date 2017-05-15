@@ -1,0 +1,41 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "CacheController_tb1": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_145608_archive_1.a",
+            "size": 72263,
+            "objects": [
+                [
+                    "amcQw_u0_obj.o",
+                    7118
+                ],
+                [
+                    "bVPqF_u0_obj.o",
+                    65145
+                ]
+            ]
+        }
+    ],
+    "CompUnits": {
+        "amcQw_u0_obj": {
+            "bytes": 7118,
+            "mod": "...MASTER...",
+            "out": "amcQw_u0_obj.o",
+            "archive": "archive.0/_145608_archive_1.a",
+            "mode": 4
+        },
+        "bVPqF_u0_obj": {
+            "bytes": 65145,
+            "mod": "CacheController_tb1",
+            "out": "bVPqF_u0_obj.o",
+            "archive": "archive.0/_145608_archive_1.a",
+            "mode": 4
+        }
+    }
+}

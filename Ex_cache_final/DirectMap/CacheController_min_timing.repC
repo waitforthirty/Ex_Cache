@@ -1,0 +1,590 @@
+Warning: Worst timing paths might not be returned. (TIM-104)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 3
+        -greater_path 0.00
+        -max_paths 20
+Design : CacheController
+Version: J-2014.09-SP3
+Date   : Sun May 14 20:22:04 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: vtvt_tsmc180
+Wire Load Model Mode: top
+
+  Startpoint: addr_req[0]
+              (input port clocked by clk)
+  Endpoint: addr_resp_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  addr_req[0] (in)                        17.43      22.23 r
+  U11219/op (mux2_1)                     113.31     135.54 r
+  addr_resp_reg[0]/ip (dp_1)               0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  addr_resp_reg[0]/ck (dp_1)               0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: addr_req[1]
+              (input port clocked by clk)
+  Endpoint: addr_resp_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  addr_req[1] (in)                        17.43      22.23 r
+  U11221/op (mux2_1)                     113.31     135.54 r
+  addr_resp_reg[1]/ip (dp_1)               0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  addr_resp_reg[1]/ck (dp_1)               0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: addr_req[2]
+              (input port clocked by clk)
+  Endpoint: addr_resp_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  addr_req[2] (in)                        17.43      22.23 r
+  U11223/op (mux2_1)                     113.31     135.54 r
+  addr_resp_reg[2]/ip (dp_1)               0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  addr_resp_reg[2]/ck (dp_1)               0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: addr_req[3]
+              (input port clocked by clk)
+  Endpoint: addr_resp_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  addr_req[3] (in)                        17.43      22.23 r
+  U11225/op (mux2_1)                     113.31     135.54 r
+  addr_resp_reg[3]/ip (dp_1)               0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  addr_resp_reg[3]/ck (dp_1)               0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[0] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[0] (in)                         17.43      22.23 r
+  U12038/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[0]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[0]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[1] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[1] (in)                         17.43      22.23 r
+  U12039/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[1]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[1]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[2] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[2] (in)                         17.43      22.23 r
+  U12040/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[2]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[2]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[3] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[3] (in)                         17.43      22.23 r
+  U12041/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[3]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[3]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[4] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[4] (in)                         17.43      22.23 r
+  U12042/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[4]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[4]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[5] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[5] (in)                         17.43      22.23 r
+  U12043/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[5]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[5]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[6] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[6] (in)                         17.43      22.23 r
+  U12044/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[6]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[6]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[7] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[7] (in)                         17.43      22.23 r
+  U12045/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[7]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[7]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[8] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[8] (in)                         17.43      22.23 r
+  U12046/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[8]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[8]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[9] (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[9] (in)                         17.43      22.23 r
+  U12047/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[9]/ip (dp_1)          0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[9]/ck (dp_1)          0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[10]
+              (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[10] (in)                        17.43      22.23 r
+  U12048/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[10]/ip (dp_1)         0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[10]/ck (dp_1)         0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[11]
+              (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[11] (in)                        17.43      22.23 r
+  U12049/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[11]/ip (dp_1)         0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[11]/ck (dp_1)         0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[12]
+              (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[12] (in)                        17.43      22.23 r
+  U12050/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[12]/ip (dp_1)         0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[12]/ck (dp_1)         0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[13]
+              (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[13] (in)                        17.43      22.23 r
+  U12051/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[13]/ip (dp_1)         0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[13]/ck (dp_1)         0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[14]
+              (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[14] (in)                        17.43      22.23 r
+  U12052/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[14]/ip (dp_1)         0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[14]/ck (dp_1)         0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+  Startpoint: data_wr[15]
+              (input port clocked by clk)
+  Endpoint: iCache_data_wr_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.80       4.80 r
+  data_wr[15] (in)                        17.43      22.23 r
+  U12053/op (mux2_1)                     113.31     135.54 r
+  iCache_data_wr_reg[15]/ip (dp_1)         0.00     135.54 r
+  data arrival time                                 135.54
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  iCache_data_wr_reg[15]/ck (dp_1)         0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                -135.54
+  -----------------------------------------------------------
+  slack (MET)                                       135.54
+
+
+1
